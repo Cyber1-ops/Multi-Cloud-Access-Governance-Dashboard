@@ -1,0 +1,3835 @@
+{
+  "subscriptionId": "gov-azure-sub-9f2a",
+  "generatedAt": "2026-09-08",
+  "roleAssignments": [
+    {
+      "principalId": "255b30e2-0000-4000-8000-97236ae66582",
+      "principalType": "User",
+      "principalName": "Hamdan Chen",
+      "principalEmail": "hamdan.chen@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "af521b94-0000-4000-8000-fa2cd253d966",
+      "principalType": "User",
+      "principalName": "Amal Kumar",
+      "principalEmail": "amal.kumar@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "862138ad-0000-4000-8000-d32501a25ed1",
+      "principalType": "User",
+      "principalName": "Shaikha Rahman",
+      "principalEmail": "shaikha.rahman@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-08"
+    },
+    {
+      "principalId": "143a9aff-0000-4000-8000-cfe2f5948a54",
+      "principalType": "User",
+      "principalName": "Zayed Al Suwaidi",
+      "principalEmail": "zayed.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-17"
+    },
+    {
+      "principalId": "79ba630a-0000-4000-8000-8f8decf32053",
+      "principalType": "User",
+      "principalName": "Tariq Patel",
+      "principalEmail": "tariq.patel@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-28"
+    },
+    {
+      "principalId": "edcabf94-0000-4000-8000-532c4c9d6907",
+      "principalType": "User",
+      "principalName": "Khalid Ibrahim",
+      "principalEmail": "khalid.ibrahim@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-13"
+    },
+    {
+      "principalId": "f96d40f8-0000-4000-8000-32030dbf0caf",
+      "principalType": "User",
+      "principalName": "Maha Farah",
+      "principalEmail": "maha.farah@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-22"
+    },
+    {
+      "principalId": "9e5d9c7a-0000-4000-8000-7e2ecc4d5819",
+      "principalType": "User",
+      "principalName": "Wafa Ibrahim",
+      "principalEmail": "wafa.ibrahim@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-22"
+    },
+    {
+      "principalId": "5111d31d-0000-4000-8000-2edb1b46ebdc",
+      "principalType": "User",
+      "principalName": "Olivia Sharma",
+      "principalEmail": "olivia.sharma@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "1a7167c7-0000-4000-8000-b53416f142a2",
+      "principalType": "User",
+      "principalName": "Omar Kumar",
+      "principalEmail": "omar.kumar@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-19"
+    },
+    {
+      "principalId": "c777a07f-0000-4000-8000-56d385671b58",
+      "principalType": "User",
+      "principalName": "Arun Chen",
+      "principalEmail": "arun.chen@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-02-20"
+    },
+    {
+      "principalId": "46a56fe8-0000-4000-8000-f7ed4cbc9044",
+      "principalType": "User",
+      "principalName": "Wafa Al Mansoori",
+      "principalEmail": "wafa.almansoori@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-24"
+    },
+    {
+      "principalId": "654c11d9-0000-4000-8000-a8b9dcb9075e",
+      "principalType": "User",
+      "principalName": "Majid Wang",
+      "principalEmail": "majid.wang@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "3e0f84ce-0000-4000-8000-8f8360452909",
+      "principalType": "User",
+      "principalName": "Maha Sharma",
+      "principalEmail": "maha.sharma@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-14"
+    },
+    {
+      "principalId": "7fd255ee-0000-4000-8000-9b0ca2224f96",
+      "principalType": "User",
+      "principalName": "Aisha Silva",
+      "principalEmail": "aisha.silva@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-13"
+    },
+    {
+      "principalId": "950df1a0-0000-4000-8000-b814f7eae66e",
+      "principalType": "User",
+      "principalName": "Shaikha Qureshi",
+      "principalEmail": "shaikha.qureshi@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-03"
+    },
+    {
+      "principalId": "1b1f2eb1-0000-4000-8000-8479193e4783",
+      "principalType": "User",
+      "principalName": "Emma Haddad",
+      "principalEmail": "emma.haddad@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-03"
+    },
+    {
+      "principalId": "1ac3bf31-0000-4000-8000-2bf5f633cc2d",
+      "principalType": "User",
+      "principalName": "Noura Johnson",
+      "principalEmail": "noura.johnson@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-11"
+    },
+    {
+      "principalId": "592a3549-0000-4000-8000-e05718fdd2b9",
+      "principalType": "User",
+      "principalName": "Noura Nassar",
+      "principalEmail": "noura.nassar@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-04"
+    },
+    {
+      "principalId": "28fea761-0000-4000-8000-da4d8f5242d3",
+      "principalType": "User",
+      "principalName": "Majid Aziz",
+      "principalEmail": "majid.aziz@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-25"
+    },
+    {
+      "principalId": "36fce0ac-0000-4000-8000-2008cbc72f1a",
+      "principalType": "User",
+      "principalName": "Huda Costa",
+      "principalEmail": "huda.costa@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-30"
+    },
+    {
+      "principalId": "a39c9ec6-0000-4000-8000-c6fb98d3148b",
+      "principalType": "User",
+      "principalName": "Rashid Habib",
+      "principalEmail": "rashid.habib@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "97154633-0000-4000-8000-4494ac0f6801",
+      "principalType": "User",
+      "principalName": "Sofia Al Marri",
+      "principalEmail": "sofia.almarri@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-15"
+    },
+    {
+      "principalId": "6c4c450b-0000-4000-8000-fab22ab7b2ef",
+      "principalType": "User",
+      "principalName": "Aisha Sharma",
+      "principalEmail": "aisha.sharma@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-05"
+    },
+    {
+      "principalId": "7c0f549d-0000-4000-8000-fd6ca72f947d",
+      "principalType": "User",
+      "principalName": "Sofia Costa",
+      "principalEmail": "sofia.costa@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-21"
+    },
+    {
+      "principalId": "2ad11fe8-0000-4000-8000-0fcc90bde900",
+      "principalType": "User",
+      "principalName": "Saeed Al Mansoori",
+      "principalEmail": "saeed.almansoori@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-14"
+    },
+    {
+      "principalId": "1d3ca5a4-0000-4000-8000-e1fab80f16c5",
+      "principalType": "User",
+      "principalName": "Emma Silva",
+      "principalEmail": "emma.silva@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-02"
+    },
+    {
+      "principalId": "164484a0-0000-4000-8000-7950cfd7f3b9",
+      "principalType": "User",
+      "principalName": "Hamdan Chen",
+      "principalEmail": "hamdan.chen2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "88438de2-0000-4000-8000-a5b52b1ac76c",
+      "principalType": "User",
+      "principalName": "Maha Osman",
+      "principalEmail": "maha.osman@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-14"
+    },
+    {
+      "principalId": "64880945-0000-4000-8000-8995a1e518a2",
+      "principalType": "User",
+      "principalName": "Yousef Rahman",
+      "principalEmail": "yousef.rahman@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "f8ded777-0000-4000-8000-b768b28187c4",
+      "principalType": "User",
+      "principalName": "Tariq Al Marri",
+      "principalEmail": "tariq.almarri@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "0c648ca2-0000-4000-8000-085675a72686",
+      "principalType": "User",
+      "principalName": "Yousef Al Nuaimi",
+      "principalEmail": "yousef.alnuaimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "40198303-0000-4000-8000-1a832a5fda18",
+      "principalType": "User",
+      "principalName": "Sofia Khan",
+      "principalEmail": "sofia.khan@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-23"
+    },
+    {
+      "principalId": "a7cde143-0000-4000-8000-30bbb4258e19",
+      "principalType": "User",
+      "principalName": "James Sharma",
+      "principalEmail": "james.sharma@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-10"
+    },
+    {
+      "principalId": "231ae7c7-0000-4000-8000-2306249204c7",
+      "principalType": "User",
+      "principalName": "Aisha Johnson",
+      "principalEmail": "aisha.johnson@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-26"
+    },
+    {
+      "principalId": "dc268108-0000-4000-8000-47af19b814fc",
+      "principalType": "User",
+      "principalName": "Hamdan Khan",
+      "principalEmail": "hamdan.khan@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-12"
+    },
+    {
+      "principalId": "a505da9c-0000-4000-8000-9a71e03635fc",
+      "principalType": "User",
+      "principalName": "Amal Osman",
+      "principalEmail": "amal.osman@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "6bbdb66f-0000-4000-8000-088b12af97e4",
+      "principalType": "User",
+      "principalName": "Ahmad Al Suwaidi",
+      "principalEmail": "ahmad.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-30"
+    },
+    {
+      "principalId": "9db54283-0000-4000-8000-2acd4708203b",
+      "principalType": "User",
+      "principalName": "Ahmad Ibrahim",
+      "principalEmail": "ahmad.ibrahim@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-19"
+    },
+    {
+      "principalId": "0ed2ec9d-0000-4000-8000-3b626f3a5115",
+      "principalType": "User",
+      "principalName": "Shaikha Chen",
+      "principalEmail": "shaikha.chen@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-31"
+    },
+    {
+      "principalId": "e65fad87-0000-4000-8000-8b416de8370a",
+      "principalType": "User",
+      "principalName": "Noah Al Nuaimi",
+      "principalEmail": "noah.alnuaimi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "5e20c957-0000-4000-8000-3b0db90800f3",
+      "principalType": "User",
+      "principalName": "Emma Al Balushi",
+      "principalEmail": "emma.albalushi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "e6e59b32-0000-4000-8000-72452de982f8",
+      "principalType": "User",
+      "principalName": "Arun Sharma",
+      "principalEmail": "arun.sharma@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-30"
+    },
+    {
+      "principalId": "74ed5145-0000-4000-8000-66be5e717fca",
+      "principalType": "User",
+      "principalName": "Bilal Johnson",
+      "principalEmail": "bilal.johnson@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "3ec0a285-0000-4000-8000-0c3d68f82063",
+      "principalType": "User",
+      "principalName": "Salma Johnson",
+      "principalEmail": "salma.johnson@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-11"
+    },
+    {
+      "principalId": "e5449887-0000-4000-8000-2b78bf7655d7",
+      "principalType": "User",
+      "principalName": "Wafa Qureshi",
+      "principalEmail": "wafa.qureshi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-21"
+    },
+    {
+      "principalId": "73e7f042-0000-4000-8000-263d3bcdf203",
+      "principalType": "User",
+      "principalName": "Reem Farah",
+      "principalEmail": "reem.farah@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-29"
+    },
+    {
+      "principalId": "7316ce64-0000-4000-8000-d02250647c59",
+      "principalType": "User",
+      "principalName": "Huda Qureshi",
+      "principalEmail": "huda.qureshi@gov.ae",
+      "roleDefinitionName": "Owner",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-02-16"
+    },
+    {
+      "principalId": "0a530df9-0000-4000-8000-4bf153ea4919",
+      "principalType": "User",
+      "principalName": "Khalid Al Mansoori",
+      "principalEmail": "khalid.almansoori@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-11"
+    },
+    {
+      "principalId": "dac726b6-0000-4000-8000-7fec8cd4b90a",
+      "principalType": "User",
+      "principalName": "Olivia Al Mansoori",
+      "principalEmail": "olivia.almansoori@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-02"
+    },
+    {
+      "principalId": "92ea1324-0000-4000-8000-fe04651ea252",
+      "principalType": "User",
+      "principalName": "Dana Patel",
+      "principalEmail": "dana.patel@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-28"
+    },
+    {
+      "principalId": "a5b40983-0000-4000-8000-d2f07fb75c57",
+      "principalType": "User",
+      "principalName": "Adel Habib",
+      "principalEmail": "adel.habib@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "b69f75c5-0000-4000-8000-f827c80c2195",
+      "principalType": "User",
+      "principalName": "Hana Habib",
+      "principalEmail": "hana.habib@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-17"
+    },
+    {
+      "principalId": "f956be95-0000-4000-8000-7ee719a2676f",
+      "principalType": "User",
+      "principalName": "Salma Johnson",
+      "principalEmail": "salma.johnson2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-26"
+    },
+    {
+      "principalId": "3803dcee-0000-4000-8000-f4ba86c5547c",
+      "principalType": "User",
+      "principalName": "Rashid Kumar",
+      "principalEmail": "rashid.kumar@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "c63ce21d-0000-4000-8000-bad2dc54d59b",
+      "principalType": "User",
+      "principalName": "Dana Kumar",
+      "principalEmail": "dana.kumar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-12"
+    },
+    {
+      "principalId": "f2dd9456-0000-4000-8000-f972f5edf382",
+      "principalType": "User",
+      "principalName": "Rashid Kumar",
+      "principalEmail": "rashid.kumar2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-20"
+    },
+    {
+      "principalId": "d08012b8-0000-4000-8000-9d1760ddc7f1",
+      "principalType": "User",
+      "principalName": "James Sharma",
+      "principalEmail": "james.sharma2@gov.ae",
+      "roleDefinitionName": "Owner",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "90c7e6ac-0000-4000-8000-fe0befcac577",
+      "principalType": "User",
+      "principalName": "Huda Costa",
+      "principalEmail": "huda.costa2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-27"
+    },
+    {
+      "principalId": "62ccc604-0000-4000-8000-d6dcbb8aa843",
+      "principalType": "User",
+      "principalName": "Liam Ibrahim",
+      "principalEmail": "liam.ibrahim@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-31"
+    },
+    {
+      "principalId": "29a3db6d-0000-4000-8000-111bd883e3f8",
+      "principalType": "User",
+      "principalName": "Majid Al Balushi",
+      "principalEmail": "majid.albalushi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "0db5d441-0000-4000-8000-693d54c29d5c",
+      "principalType": "User",
+      "principalName": "Wei Aziz",
+      "principalEmail": "wei.aziz@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-20"
+    },
+    {
+      "principalId": "0cb4e891-0000-4000-8000-fb5dd700b461",
+      "principalType": "User",
+      "principalName": "Majid Al Nuaimi",
+      "principalEmail": "majid.alnuaimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-09"
+    },
+    {
+      "principalId": "a3607681-0000-4000-8000-29f3fa207403",
+      "principalType": "User",
+      "principalName": "Hamdan Farah",
+      "principalEmail": "hamdan.farah@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-20"
+    },
+    {
+      "principalId": "61a66444-0000-4000-8000-e43c2fc3e649",
+      "principalType": "User",
+      "principalName": "Nasser Johnson",
+      "principalEmail": "nasser.johnson@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "18c180d2-0000-4000-8000-b005ab0b4cc5",
+      "principalType": "User",
+      "principalName": "Huda Johnson",
+      "principalEmail": "huda.johnson@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-05"
+    },
+    {
+      "principalId": "25bf213d-0000-4000-8000-588372f444ab",
+      "principalType": "User",
+      "principalName": "Saeed Khan",
+      "principalEmail": "saeed.khan@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-17"
+    },
+    {
+      "principalId": "ceae1325-0000-4000-8000-c6b416476e3f",
+      "principalType": "User",
+      "principalName": "Layla Qureshi",
+      "principalEmail": "layla.qureshi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-15"
+    },
+    {
+      "principalId": "ecc817a6-0000-4000-8000-873c693016ea",
+      "principalType": "User",
+      "principalName": "Ahmad Nassar",
+      "principalEmail": "ahmad.nassar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-04"
+    },
+    {
+      "principalId": "09eda6f5-0000-4000-8000-193c3cd1ff3f",
+      "principalType": "User",
+      "principalName": "Nasser Osman",
+      "principalEmail": "nasser.osman@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-01"
+    },
+    {
+      "principalId": "3a5b6ac5-0000-4000-8000-e2dfbe64ac2a",
+      "principalType": "User",
+      "principalName": "James Kumar",
+      "principalEmail": "james.kumar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-01"
+    },
+    {
+      "principalId": "28b26b1b-0000-4000-8000-ce8881bd55d5",
+      "principalType": "User",
+      "principalName": "Mei Rahman",
+      "principalEmail": "mei.rahman@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-18"
+    },
+    {
+      "principalId": "b462e3e8-0000-4000-8000-bc98462363a9",
+      "principalType": "User",
+      "principalName": "Huda Sharma",
+      "principalEmail": "huda.sharma@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "ad7d6f81-0000-4000-8000-f2bc02472360",
+      "principalType": "User",
+      "principalName": "Hamdan Chen",
+      "principalEmail": "hamdan.chen3@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-19"
+    },
+    {
+      "principalId": "4082fcda-0000-4000-8000-9ab27779857f",
+      "principalType": "User",
+      "principalName": "Ahmad Patel",
+      "principalEmail": "ahmad.patel@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "1bacbd0d-0000-4000-8000-ac2d1057a002",
+      "principalType": "User",
+      "principalName": "Emma Osman",
+      "principalEmail": "emma.osman@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-23"
+    },
+    {
+      "principalId": "309e47ba-0000-4000-8000-f393c8ef0377",
+      "principalType": "User",
+      "principalName": "Nasser Patel",
+      "principalEmail": "nasser.patel@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-30"
+    },
+    {
+      "principalId": "38e59b27-0000-4000-8000-9d3adf162ec3",
+      "principalType": "User",
+      "principalName": "Olivia Osman",
+      "principalEmail": "olivia.osman@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "123b31cf-0000-4000-8000-639be3b16d36",
+      "principalType": "User",
+      "principalName": "Majid Patel",
+      "principalEmail": "majid.patel@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "3346a332-0000-4000-8000-4954752366ce",
+      "principalType": "User",
+      "principalName": "Emma Kamal",
+      "principalEmail": "emma.kamal@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-02"
+    },
+    {
+      "principalId": "288f3435-0000-4000-8000-2d13c79ddb62",
+      "principalType": "User",
+      "principalName": "Faisal Sharma",
+      "principalEmail": "faisal.sharma@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-08"
+    },
+    {
+      "principalId": "30c9a2be-0000-4000-8000-021cad3f5dd4",
+      "principalType": "User",
+      "principalName": "Saeed Al Mansoori",
+      "principalEmail": "saeed.almansoori2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-04"
+    },
+    {
+      "principalId": "f2ce7eeb-0000-4000-8000-acf8862c92fd",
+      "principalType": "User",
+      "principalName": "Salma Al Suwaidi",
+      "principalEmail": "salma.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-28"
+    },
+    {
+      "principalId": "812faa38-0000-4000-8000-bbb11f878b32",
+      "principalType": "User",
+      "principalName": "Bilal Al Nuaimi",
+      "principalEmail": "bilal.alnuaimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-19"
+    },
+    {
+      "principalId": "61584f88-0000-4000-8000-81668c1ab2c7",
+      "principalType": "User",
+      "principalName": "Priya Chen",
+      "principalEmail": "priya.chen@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-31"
+    },
+    {
+      "principalId": "1e23da4b-0000-4000-8000-fed71b341937",
+      "principalType": "User",
+      "principalName": "James Al Marri",
+      "principalEmail": "james.almarri@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "7b0ccad9-0000-4000-8000-01663c088990",
+      "principalType": "User",
+      "principalName": "Bilal Habib",
+      "principalEmail": "bilal.habib@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-02"
+    },
+    {
+      "principalId": "4bc81c16-0000-4000-8000-19a476dae194",
+      "principalType": "User",
+      "principalName": "Tariq Haddad",
+      "principalEmail": "tariq.haddad@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-30"
+    },
+    {
+      "principalId": "54231dbe-0000-4000-8000-e01ce4ffc31a",
+      "principalType": "User",
+      "principalName": "Latifa Wang",
+      "principalEmail": "latifa.wang@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "1cf14654-0000-4000-8000-351928ce231e",
+      "principalType": "User",
+      "principalName": "Noah Al Marri",
+      "principalEmail": "noah.almarri@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-05"
+    },
+    {
+      "principalId": "eb9f33cb-0000-4000-8000-e1a16949ece5",
+      "principalType": "User",
+      "principalName": "Mariam Smith",
+      "principalEmail": "mariam.smith@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-23"
+    },
+    {
+      "principalId": "1861c9f3-0000-4000-8000-f6bf3fa2bde0",
+      "principalType": "User",
+      "principalName": "Aisha Haddad",
+      "principalEmail": "aisha.haddad@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-03"
+    },
+    {
+      "principalId": "c05db774-0000-4000-8000-7b5652150ed8",
+      "principalType": "User",
+      "principalName": "Dana Patel",
+      "principalEmail": "dana.patel2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-06"
+    },
+    {
+      "principalId": "92b26acd-0000-4000-8000-e4e67f9ad277",
+      "principalType": "User",
+      "principalName": "Mariam Kamal",
+      "principalEmail": "mariam.kamal@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-29"
+    },
+    {
+      "principalId": "8ff50701-0000-4000-8000-ba0857423882",
+      "principalType": "User",
+      "principalName": "Tariq Smith",
+      "principalEmail": "tariq.smith@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-29"
+    },
+    {
+      "principalId": "1b37ef19-0000-4000-8000-540ce599bd3c",
+      "principalType": "User",
+      "principalName": "Fatima Sharma",
+      "principalEmail": "fatima.sharma@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "7fb33be5-0000-4000-8000-dd99ef705d01",
+      "principalType": "User",
+      "principalName": "Wafa Chen",
+      "principalEmail": "wafa.chen@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "6279403c-0000-4000-8000-7f19c32afc4a",
+      "principalType": "User",
+      "principalName": "Wei Wang",
+      "principalEmail": "wei.wang@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-26"
+    },
+    {
+      "principalId": "a1f0fa7a-0000-4000-8000-6b5f336d7786",
+      "principalType": "User",
+      "principalName": "Khalid Zaman",
+      "principalEmail": "khalid.zaman@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-05"
+    },
+    {
+      "principalId": "88addab1-0000-4000-8000-0cf01b41a61e",
+      "principalType": "User",
+      "principalName": "Zayed Ibrahim",
+      "principalEmail": "zayed.ibrahim@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-07"
+    },
+    {
+      "principalId": "8a8a4105-0000-4000-8000-347873dd3bc6",
+      "principalType": "User",
+      "principalName": "Huda Silva",
+      "principalEmail": "huda.silva@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-07"
+    },
+    {
+      "principalId": "be6127a8-0000-4000-8000-969e318910ec",
+      "principalType": "User",
+      "principalName": "Liam Smith",
+      "principalEmail": "liam.smith@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-02"
+    },
+    {
+      "principalId": "4d187b75-0000-4000-8000-b7568cd74c27",
+      "principalType": "User",
+      "principalName": "Emma Smith",
+      "principalEmail": "emma.smith@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "8150e0c9-0000-4000-8000-ce8c897b303d",
+      "principalType": "User",
+      "principalName": "James Osman",
+      "principalEmail": "james.osman@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-16"
+    },
+    {
+      "principalId": "1d06149e-0000-4000-8000-90ceb9567731",
+      "principalType": "User",
+      "principalName": "Adel Sharma",
+      "principalEmail": "adel.sharma@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-21"
+    },
+    {
+      "principalId": "88802d4d-0000-4000-8000-2185a07eafb1",
+      "principalType": "User",
+      "principalName": "Dana Al Marri",
+      "principalEmail": "dana.almarri@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "54eb4c91-0000-4000-8000-25801667c518",
+      "principalType": "User",
+      "principalName": "Salma Farah",
+      "principalEmail": "salma.farah@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-15"
+    },
+    {
+      "principalId": "1b2bb2ec-0000-4000-8000-9023162534ca",
+      "principalType": "User",
+      "principalName": "James Smith",
+      "principalEmail": "james.smith@gov.ae",
+      "roleDefinitionName": "Owner",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-06"
+    },
+    {
+      "principalId": "38491ecc-0000-4000-8000-c830bf2b43b4",
+      "principalType": "User",
+      "principalName": "Faisal Sharma",
+      "principalEmail": "faisal.sharma2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-05"
+    },
+    {
+      "principalId": "f26d3dd3-0000-4000-8000-6b8c4e003d55",
+      "principalType": "User",
+      "principalName": "Priya Farah",
+      "principalEmail": "priya.farah@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-29"
+    },
+    {
+      "principalId": "8cb6d1f0-0000-4000-8000-805a113eaf84",
+      "principalType": "User",
+      "principalName": "Olivia Rahman",
+      "principalEmail": "olivia.rahman@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-07"
+    },
+    {
+      "principalId": "199c8d94-0000-4000-8000-23bd9e98961d",
+      "principalType": "User",
+      "principalName": "Majid Sharma",
+      "principalEmail": "majid.sharma@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-20"
+    },
+    {
+      "principalId": "cec56969-0000-4000-8000-db4bf56aabc0",
+      "principalType": "User",
+      "principalName": "Noah Patel",
+      "principalEmail": "noah.patel@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-28"
+    },
+    {
+      "principalId": "d77fbeeb-0000-4000-8000-649289e2df24",
+      "principalType": "User",
+      "principalName": "Hamdan Nassar",
+      "principalEmail": "hamdan.nassar2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-17"
+    },
+    {
+      "principalId": "4a7eebc2-0000-4000-8000-2e5d82aa5c46",
+      "principalType": "User",
+      "principalName": "Saeed Smith",
+      "principalEmail": "saeed.smith@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "5c7af83d-0000-4000-8000-146e0be3534a",
+      "principalType": "User",
+      "principalName": "Majid Silva",
+      "principalEmail": "majid.silva@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-03"
+    },
+    {
+      "principalId": "8430f0fa-0000-4000-8000-b0a8de22dc3f",
+      "principalType": "User",
+      "principalName": "Sofia Al Suwaidi",
+      "principalEmail": "sofia.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "d123f7c1-0000-4000-8000-75efa93e7b5b",
+      "principalType": "User",
+      "principalName": "Hana Kumar",
+      "principalEmail": "hana.kumar@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-05"
+    },
+    {
+      "principalId": "7aa1219a-0000-4000-8000-528e973e129c",
+      "principalType": "User",
+      "principalName": "Noura Habib",
+      "principalEmail": "noura.habib@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-15"
+    },
+    {
+      "principalId": "f27f3ad7-0000-4000-8000-e5fd3772aa97",
+      "principalType": "User",
+      "principalName": "Priya Saleh",
+      "principalEmail": "priya.saleh@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-19"
+    },
+    {
+      "principalId": "82c41c54-0000-4000-8000-af72af82e70c",
+      "principalType": "User",
+      "principalName": "Khalid Patel",
+      "principalEmail": "khalid.patel@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-18"
+    },
+    {
+      "principalId": "6cecdf82-0000-4000-8000-f44b412817eb",
+      "principalType": "User",
+      "principalName": "Tariq Haddad",
+      "principalEmail": "tariq.haddad2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-27"
+    },
+    {
+      "principalId": "01d77831-0000-4000-8000-692ca79055b0",
+      "principalType": "User",
+      "principalName": "Noura Habib",
+      "principalEmail": "noura.habib2@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-08"
+    },
+    {
+      "principalId": "ae3c2ce6-0000-4000-8000-684ac145d6ba",
+      "principalType": "User",
+      "principalName": "Hana Al Suwaidi",
+      "principalEmail": "hana.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "0d53551a-0000-4000-8000-02b5a2c8cf62",
+      "principalType": "User",
+      "principalName": "Latifa Haddad",
+      "principalEmail": "latifa.haddad@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-19"
+    },
+    {
+      "principalId": "7e8eed12-0000-4000-8000-674602bdeabe",
+      "principalType": "User",
+      "principalName": "Wei Al Nuaimi",
+      "principalEmail": "wei.alnuaimi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-10"
+    },
+    {
+      "principalId": "8cb21aa2-0000-4000-8000-b239953b0f1f",
+      "principalType": "User",
+      "principalName": "Fatima Patel",
+      "principalEmail": "fatima.patel@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-04"
+    },
+    {
+      "principalId": "4b541670-0000-4000-8000-3be8f26f9b19",
+      "principalType": "User",
+      "principalName": "Emma Smith",
+      "principalEmail": "emma.smith2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "7b62659e-0000-4000-8000-2296420079f5",
+      "principalType": "User",
+      "principalName": "Shaikha Smith",
+      "principalEmail": "shaikha.smith@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "ee6ffbea-0000-4000-8000-a0b379ff89d9",
+      "principalType": "User",
+      "principalName": "Bilal Rahman",
+      "principalEmail": "bilal.rahman@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "a9d6290d-0000-4000-8000-03649d23c3cf",
+      "principalType": "User",
+      "principalName": "Olivia Al Nuaimi",
+      "principalEmail": "olivia.alnuaimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "47bf8db7-0000-4000-8000-41a993a05478",
+      "principalType": "User",
+      "principalName": "Latifa Silva",
+      "principalEmail": "latifa.silva@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-30"
+    },
+    {
+      "principalId": "2cbfb769-0000-4000-8000-3da0f9fc6034",
+      "principalType": "User",
+      "principalName": "Noah Osman",
+      "principalEmail": "noah.osman@gov.ae",
+      "roleDefinitionName": "Owner",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-15"
+    },
+    {
+      "principalId": "19ca9c1b-0000-4000-8000-84f7dca1adcc",
+      "principalType": "User",
+      "principalName": "Sofia Smith",
+      "principalEmail": "sofia.smith@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-15"
+    },
+    {
+      "principalId": "2f14f777-0000-4000-8000-6bca6c878546",
+      "principalType": "User",
+      "principalName": "Olivia Al Mansoori",
+      "principalEmail": "olivia.almansoori2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "618192de-0000-4000-8000-f22b2648c819",
+      "principalType": "User",
+      "principalName": "Fatima Smith",
+      "principalEmail": "fatima.smith@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "0c36ad4e-0000-4000-8000-1ebd29d0c613",
+      "principalType": "User",
+      "principalName": "Olivia Al Marri",
+      "principalEmail": "olivia.almarri@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-20"
+    },
+    {
+      "principalId": "581993cc-0000-4000-8000-3e12696929b2",
+      "principalType": "User",
+      "principalName": "Noura Osman",
+      "principalEmail": "noura.osman@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "565f1491-0000-4000-8000-cf3e9256d707",
+      "principalType": "User",
+      "principalName": "Faisal Aziz",
+      "principalEmail": "faisal.aziz@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-13"
+    },
+    {
+      "principalId": "f0533851-0000-4000-8000-d3f673461e07",
+      "principalType": "User",
+      "principalName": "Reem Osman",
+      "principalEmail": "reem.osman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-02"
+    },
+    {
+      "principalId": "63ccf604-0000-4000-8000-7eaa3ab7127e",
+      "principalType": "User",
+      "principalName": "Bilal Rahman",
+      "principalEmail": "bilal.rahman2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-05"
+    },
+    {
+      "principalId": "dd3ee854-0000-4000-8000-8b79ef52d36e",
+      "principalType": "User",
+      "principalName": "Huda Costa",
+      "principalEmail": "huda.costa3@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-18"
+    },
+    {
+      "principalId": "d913057d-0000-4000-8000-92d25808d790",
+      "principalType": "User",
+      "principalName": "Noah Ibrahim",
+      "principalEmail": "noah.ibrahim@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "5fa72012-0000-4000-8000-dfcc8f807d8b",
+      "principalType": "User",
+      "principalName": "Reem Zaman",
+      "principalEmail": "reem.zaman@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-15"
+    },
+    {
+      "principalId": "69b41194-0000-4000-8000-230dda7dcc53",
+      "principalType": "User",
+      "principalName": "Hana Kamal",
+      "principalEmail": "hana.kamal@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-02"
+    },
+    {
+      "principalId": "3012f819-0000-4000-8000-4de604f718c8",
+      "principalType": "User",
+      "principalName": "Khalid Silva",
+      "principalEmail": "khalid.silva@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-05"
+    },
+    {
+      "principalId": "7e5b3ac9-0000-4000-8000-d72a578799d9",
+      "principalType": "User",
+      "principalName": "Hana Saleh",
+      "principalEmail": "hana.saleh2@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-14"
+    },
+    {
+      "principalId": "25660316-0000-4000-8000-248c6475c0ee",
+      "principalType": "User",
+      "principalName": "Latifa Smith",
+      "principalEmail": "latifa.smith@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-04"
+    },
+    {
+      "principalId": "7165e36b-0000-4000-8000-65fa08942176",
+      "principalType": "User",
+      "principalName": "Noah Ibrahim",
+      "principalEmail": "noah.ibrahim2@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-07"
+    },
+    {
+      "principalId": "1f44aa88-0000-4000-8000-65bf4c7f03bb",
+      "principalType": "User",
+      "principalName": "Noah Al Nuaimi",
+      "principalEmail": "noah.alnuaimi2@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-01"
+    },
+    {
+      "principalId": "f80590f0-0000-4000-8000-f356b0d515ab",
+      "principalType": "User",
+      "principalName": "Tariq Wang",
+      "principalEmail": "tariq.wang@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-27"
+    },
+    {
+      "principalId": "a502dc4b-0000-4000-8000-36fcca9d8831",
+      "principalType": "User",
+      "principalName": "Khalid Osman",
+      "principalEmail": "khalid.osman@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-29"
+    },
+    {
+      "principalId": "59008d65-0000-4000-8000-efd1bb7eb979",
+      "principalType": "User",
+      "principalName": "Hana Sharma",
+      "principalEmail": "hana.sharma@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-08"
+    },
+    {
+      "principalId": "db592a19-0000-4000-8000-a4323d211daf",
+      "principalType": "User",
+      "principalName": "Reem Kamal",
+      "principalEmail": "reem.kamal@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "a41247a2-0000-4000-8000-31481c4760a5",
+      "principalType": "User",
+      "principalName": "Majid Osman",
+      "principalEmail": "majid.osman@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "a86d8706-0000-4000-8000-19214185300d",
+      "principalType": "User",
+      "principalName": "Noah Al Balushi",
+      "principalEmail": "noah.albalushi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-17"
+    },
+    {
+      "principalId": "62a50eec-0000-4000-8000-7f5da8290f3c",
+      "principalType": "User",
+      "principalName": "Huda Khan",
+      "principalEmail": "huda.khan@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-11"
+    },
+    {
+      "principalId": "5f290290-0000-4000-8000-a59bb9d276f4",
+      "principalType": "User",
+      "principalName": "Zayed Zaman",
+      "principalEmail": "zayed.zaman@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "db107e7f-0000-4000-8000-3046279b637c",
+      "principalType": "User",
+      "principalName": "Sofia Costa",
+      "principalEmail": "sofia.costa2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-20"
+    },
+    {
+      "principalId": "eafa4d5b-0000-4000-8000-2786bbf8da91",
+      "principalType": "User",
+      "principalName": "Sultan Sharma",
+      "principalEmail": "sultan.sharma@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-26"
+    },
+    {
+      "principalId": "93875413-0000-4000-8000-ab35c559cd0f",
+      "principalType": "User",
+      "principalName": "Saeed Smith",
+      "principalEmail": "saeed.smith2@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-27"
+    },
+    {
+      "principalId": "edbc36d8-0000-4000-8000-c3d5a1d770ea",
+      "principalType": "User",
+      "principalName": "Huda Kumar",
+      "principalEmail": "huda.kumar@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-24"
+    },
+    {
+      "principalId": "170fad32-0000-4000-8000-945e6e935615",
+      "principalType": "User",
+      "principalName": "Saeed Kumar",
+      "principalEmail": "saeed.kumar2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-24"
+    },
+    {
+      "principalId": "663166a7-0000-4000-8000-cc0b15c7bc83",
+      "principalType": "User",
+      "principalName": "Liam Haddad",
+      "principalEmail": "liam.haddad@gov.ae",
+      "roleDefinitionName": "Custom - Access Deployer",
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleDefinitions/write"
+      ],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "69e08370-0000-4000-8000-b2555d822e3a",
+      "principalType": "User",
+      "principalName": "Hana Patel",
+      "principalEmail": "hana.patel@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-27"
+    },
+    {
+      "principalId": "fcd6c18e-0000-4000-8000-e18425545c1a",
+      "principalType": "User",
+      "principalName": "Olivia Farah",
+      "principalEmail": "olivia.farah@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "d1f44c8d-0000-4000-8000-afc103840661",
+      "principalType": "User",
+      "principalName": "Noah Al Hashimi",
+      "principalEmail": "noah.alhashimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-29"
+    },
+    {
+      "principalId": "c017466e-0000-4000-8000-f74f8c7e2904",
+      "principalType": "User",
+      "principalName": "Priya Ibrahim",
+      "principalEmail": "priya.ibrahim@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-28"
+    },
+    {
+      "principalId": "4572b385-0000-4000-8000-0444f1f71605",
+      "principalType": "User",
+      "principalName": "Fatima Qureshi",
+      "principalEmail": "fatima.qureshi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-03"
+    },
+    {
+      "principalId": "dd419a67-0000-4000-8000-95c104e25132",
+      "principalType": "User",
+      "principalName": "Yousef Smith",
+      "principalEmail": "yousef.smith@gov.ae",
+      "roleDefinitionName": "Owner",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "f77fa3a7-0000-4000-8000-0b00b6646199",
+      "principalType": "User",
+      "principalName": "Bilal Al Hashimi",
+      "principalEmail": "bilal.alhashimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "80520405-0000-4000-8000-1fbfcfd835fc",
+      "principalType": "User",
+      "principalName": "Noura Al Hashimi",
+      "principalEmail": "noura.alhashimi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-06"
+    },
+    {
+      "principalId": "6ad65b8c-0000-4000-8000-4e3592a97acd",
+      "principalType": "User",
+      "principalName": "Wafa Farah",
+      "principalEmail": "wafa.farah@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-22"
+    },
+    {
+      "principalId": "1e4ea133-0000-4000-8000-4a81e12ff6cd",
+      "principalType": "User",
+      "principalName": "Maha Khan",
+      "principalEmail": "maha.khan@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-21"
+    },
+    {
+      "principalId": "2f4b8be8-0000-4000-8000-763a3b705092",
+      "principalType": "User",
+      "principalName": "Maha Al Hashimi",
+      "principalEmail": "maha.alhashimi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "7dcf60fd-0000-4000-8000-53db233408ba",
+      "principalType": "User",
+      "principalName": "Aisha Ibrahim",
+      "principalEmail": "aisha.ibrahim@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-23"
+    },
+    {
+      "principalId": "c1fda581-0000-4000-8000-5aa910ee4f77",
+      "principalType": "User",
+      "principalName": "Wafa Al Suwaidi",
+      "principalEmail": "wafa.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-07"
+    },
+    {
+      "principalId": "b85f164b-0000-4000-8000-e7391bfc270c",
+      "principalType": "User",
+      "principalName": "Aisha Kumar",
+      "principalEmail": "aisha.kumar@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-16"
+    },
+    {
+      "principalId": "e267e12b-0000-4000-8000-ec354931b2d4",
+      "principalType": "User",
+      "principalName": "Arun Khan",
+      "principalEmail": "arun.khan@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-20"
+    },
+    {
+      "principalId": "e1eeb1f1-0000-4000-8000-800a171603b1",
+      "principalType": "User",
+      "principalName": "Wei Al Marri",
+      "principalEmail": "wei.almarri@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-13"
+    },
+    {
+      "principalId": "b5103e9c-0000-4000-8000-c1e228ef2f46",
+      "principalType": "User",
+      "principalName": "Noah Haddad",
+      "principalEmail": "noah.haddad@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-29"
+    },
+    {
+      "principalId": "2e421840-0000-4000-8000-435de606d7c2",
+      "principalType": "User",
+      "principalName": "Ahmad Farah",
+      "principalEmail": "ahmad.farah@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-05"
+    },
+    {
+      "principalId": "a8d3110e-0000-4000-8000-d1ff74283491",
+      "principalType": "User",
+      "principalName": "Majid Al Nuaimi",
+      "principalEmail": "majid.alnuaimi2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-07"
+    },
+    {
+      "principalId": "2da1afda-0000-4000-8000-919aac0e1f71",
+      "principalType": "User",
+      "principalName": "Emma Nassar",
+      "principalEmail": "emma.nassar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-02"
+    },
+    {
+      "principalId": "109efb40-0000-4000-8000-44e3788773ed",
+      "principalType": "User",
+      "principalName": "James Silva",
+      "principalEmail": "james.silva@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-29"
+    },
+    {
+      "principalId": "b221e1c5-0000-4000-8000-1dca9caf8df1",
+      "principalType": "User",
+      "principalName": "Adel Al Suwaidi",
+      "principalEmail": "adel.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-03"
+    },
+    {
+      "principalId": "ed56c714-0000-4000-8000-fc297f6bf62c",
+      "principalType": "User",
+      "principalName": "Nasser Ibrahim",
+      "principalEmail": "nasser.ibrahim@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-21"
+    },
+    {
+      "principalId": "a54976d0-0000-4000-8000-4f8e7b434a72",
+      "principalType": "User",
+      "principalName": "James Al Suwaidi",
+      "principalEmail": "james.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "5a853cd8-0000-4000-8000-4c71f83893a2",
+      "principalType": "User",
+      "principalName": "Khalid Wang",
+      "principalEmail": "khalid.wang@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-30"
+    },
+    {
+      "principalId": "3cd61f5e-0000-4000-8000-9af2f362d408",
+      "principalType": "User",
+      "principalName": "Priya Habib",
+      "principalEmail": "priya.habib@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "2771a422-0000-4000-8000-495d53cc6b95",
+      "principalType": "User",
+      "principalName": "Sultan Silva",
+      "principalEmail": "sultan.silva@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-14"
+    },
+    {
+      "principalId": "2639e214-0000-4000-8000-3a9a460d113d",
+      "principalType": "User",
+      "principalName": "Olivia Farah",
+      "principalEmail": "olivia.farah2@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "e46a0b42-0000-4000-8000-e3258a6342ca",
+      "principalType": "User",
+      "principalName": "Olivia Al Marri",
+      "principalEmail": "olivia.almarri2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-18"
+    },
+    {
+      "principalId": "889277fe-0000-4000-8000-2f9221bd55eb",
+      "principalType": "User",
+      "principalName": "Layla Silva",
+      "principalEmail": "layla.silva@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "e9b14c76-0000-4000-8000-5de0645f273c",
+      "principalType": "User",
+      "principalName": "Hana Wang",
+      "principalEmail": "hana.wang@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-11"
+    },
+    {
+      "principalId": "8208fd42-0000-4000-8000-a6d81b63205f",
+      "principalType": "User",
+      "principalName": "Zayed Saleh",
+      "principalEmail": "zayed.saleh@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-11"
+    },
+    {
+      "principalId": "f950f7fa-0000-4000-8000-21d26241cba3",
+      "principalType": "User",
+      "principalName": "Nasser Patel",
+      "principalEmail": "nasser.patel2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "d635212d-0000-4000-8000-ed0298986758",
+      "principalType": "User",
+      "principalName": "Rashid Patel",
+      "principalEmail": "rashid.patel@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-17"
+    },
+    {
+      "principalId": "172d2bd0-0000-4000-8000-4720d1291d13",
+      "principalType": "User",
+      "principalName": "Shaikha Kamal",
+      "principalEmail": "shaikha.kamal@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-24"
+    },
+    {
+      "principalId": "e09ef2a3-0000-4000-8000-9bedadf792ff",
+      "principalType": "User",
+      "principalName": "Liam Al Hashimi",
+      "principalEmail": "liam.alhashimi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-13"
+    },
+    {
+      "principalId": "5bf774cf-0000-4000-8000-907ddc7abd16",
+      "principalType": "User",
+      "principalName": "Priya Kamal",
+      "principalEmail": "priya.kamal@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-01"
+    },
+    {
+      "principalId": "61ae3f21-0000-4000-8000-6c248b8ce7be",
+      "principalType": "User",
+      "principalName": "Latifa Qureshi",
+      "principalEmail": "latifa.qureshi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-22"
+    },
+    {
+      "principalId": "277e0fbc-0000-4000-8000-4047ab89736b",
+      "principalType": "User",
+      "principalName": "Saeed Patel",
+      "principalEmail": "saeed.patel@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "9ac55023-0000-4000-8000-ff0e93f3c702",
+      "principalType": "User",
+      "principalName": "Tariq Aziz",
+      "principalEmail": "tariq.aziz@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "c74d8df0-0000-4000-8000-e8777807c947",
+      "principalType": "User",
+      "principalName": "Mei Osman",
+      "principalEmail": "mei.osman@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-10"
+    },
+    {
+      "principalId": "904f0df7-0000-4000-8000-9560fd888cbd",
+      "principalType": "User",
+      "principalName": "Priya Ibrahim",
+      "principalEmail": "priya.ibrahim2@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-10"
+    },
+    {
+      "principalId": "47edc6dd-0000-4000-8000-838fdb9c9b7c",
+      "principalType": "User",
+      "principalName": "Tariq Rahman",
+      "principalEmail": "tariq.rahman@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-27"
+    },
+    {
+      "principalId": "a9217ddc-0000-4000-8000-6bf52ad3136f",
+      "principalType": "User",
+      "principalName": "Hana Sharma",
+      "principalEmail": "hana.sharma2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "cc1c7204-0000-4000-8000-1500f4b3f20e",
+      "principalType": "User",
+      "principalName": "Wafa Patel",
+      "principalEmail": "wafa.patel@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-02-14"
+    },
+    {
+      "principalId": "6422a73e-0000-4000-8000-7bccbfc46c0e",
+      "principalType": "User",
+      "principalName": "Arun Smith",
+      "principalEmail": "arun.smith@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "d5e0a664-0000-4000-8000-3e5ba3596667",
+      "principalType": "User",
+      "principalName": "Amal Zaman",
+      "principalEmail": "amal.zaman@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "52ca9ced-0000-4000-8000-8df812f178bd",
+      "principalType": "User",
+      "principalName": "Wafa Osman",
+      "principalEmail": "wafa.osman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-07"
+    },
+    {
+      "principalId": "9c3cbe9d-0000-4000-8000-37847df77791",
+      "principalType": "User",
+      "principalName": "Mariam Qureshi",
+      "principalEmail": "mariam.qureshi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "ba40662f-0000-4000-8000-e44ac6f903cf",
+      "principalType": "User",
+      "principalName": "Olivia Kumar",
+      "principalEmail": "olivia.kumar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-26"
+    },
+    {
+      "principalId": "b336d143-0000-4000-8000-c85ce79503fb",
+      "principalType": "User",
+      "principalName": "Hamdan Rahman",
+      "principalEmail": "hamdan.rahman@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-08"
+    },
+    {
+      "principalId": "39d11950-0000-4000-8000-f6d1c7a2ee6f",
+      "principalType": "User",
+      "principalName": "Adel Al Hashimi",
+      "principalEmail": "adel.alhashimi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-31"
+    },
+    {
+      "principalId": "c439dfcf-0000-4000-8000-67ffa5d5bbf9",
+      "principalType": "User",
+      "principalName": "Layla Al Nuaimi",
+      "principalEmail": "layla.alnuaimi@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-22"
+    },
+    {
+      "principalId": "5bf88967-0000-4000-8000-e03fa1fe9bc6",
+      "principalType": "User",
+      "principalName": "Emma Qureshi",
+      "principalEmail": "emma.qureshi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-21"
+    },
+    {
+      "principalId": "94500024-0000-4000-8000-24e1ecc0baa6",
+      "principalType": "User",
+      "principalName": "Dana Al Suwaidi",
+      "principalEmail": "dana.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-03"
+    },
+    {
+      "principalId": "e797f3ae-0000-4000-8000-e99118e824e9",
+      "principalType": "User",
+      "principalName": "Faisal Haddad",
+      "principalEmail": "faisal.haddad@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-08"
+    },
+    {
+      "principalId": "adab7b01-0000-4000-8000-3dd953010fb9",
+      "principalType": "User",
+      "principalName": "Priya Johnson",
+      "principalEmail": "priya.johnson@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-11"
+    },
+    {
+      "principalId": "8dac210d-0000-4000-8000-7cbe704c19e2",
+      "principalType": "User",
+      "principalName": "Latifa Al Mansoori",
+      "principalEmail": "latifa.almansoori@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-27"
+    },
+    {
+      "principalId": "79731ea8-0000-4000-8000-51cc2d238ed1",
+      "principalType": "User",
+      "principalName": "Noah Costa",
+      "principalEmail": "noah.costa@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-13"
+    },
+    {
+      "principalId": "2d06f862-0000-4000-8000-0ee1c9160147",
+      "principalType": "User",
+      "principalName": "Saeed Qureshi",
+      "principalEmail": "saeed.qureshi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-22"
+    },
+    {
+      "principalId": "b8463413-0000-4000-8000-b799a1cc22d8",
+      "principalType": "User",
+      "principalName": "Adel Sharma",
+      "principalEmail": "adel.sharma2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "6b10b786-0000-4000-8000-afe9c2a59d7b",
+      "principalType": "User",
+      "principalName": "Hamdan Farah",
+      "principalEmail": "hamdan.farah2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-01"
+    },
+    {
+      "principalId": "e5f3d466-0000-4000-8000-14820b5246f3",
+      "principalType": "User",
+      "principalName": "Hamdan Kumar",
+      "principalEmail": "hamdan.kumar@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "7ecb002e-0000-4000-8000-065cc0c9c3ed",
+      "principalType": "User",
+      "principalName": "James Silva",
+      "principalEmail": "james.silva2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "956abfdf-0000-4000-8000-e8e0f9f6b641",
+      "principalType": "User",
+      "principalName": "Emma Silva",
+      "principalEmail": "emma.silva2@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-09"
+    },
+    {
+      "principalId": "b0d508a9-0000-4000-8000-10bf87ea651b",
+      "principalType": "User",
+      "principalName": "Adel Aziz",
+      "principalEmail": "adel.aziz@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-23"
+    },
+    {
+      "principalId": "af4637b3-0000-4000-8000-1c10eea77ea8",
+      "principalType": "User",
+      "principalName": "Adel Farah",
+      "principalEmail": "adel.farah@gov.ae",
+      "roleDefinitionName": "Custom - Access Deployer",
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleDefinitions/write"
+      ],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-01"
+    },
+    {
+      "principalId": "b47299b6-0000-4000-8000-68d0c6090b78",
+      "principalType": "User",
+      "principalName": "Maha Sharma",
+      "principalEmail": "maha.sharma2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-04"
+    },
+    {
+      "principalId": "1038f676-0000-4000-8000-e7a25860c4f4",
+      "principalType": "User",
+      "principalName": "Hana Al Mansoori",
+      "principalEmail": "hana.almansoori@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-04"
+    },
+    {
+      "principalId": "75373d14-0000-4000-8000-c80714860c2d",
+      "principalType": "User",
+      "principalName": "Saeed Patel",
+      "principalEmail": "saeed.patel2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-31"
+    },
+    {
+      "principalId": "4b0d2716-0000-4000-8000-f2a321cc8ba7",
+      "principalType": "User",
+      "principalName": "Fatima Haddad",
+      "principalEmail": "fatima.haddad@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-29"
+    },
+    {
+      "principalId": "5388d128-0000-4000-8000-ea7f71fc5136",
+      "principalType": "User",
+      "principalName": "Wei Aziz",
+      "principalEmail": "wei.aziz2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-12"
+    },
+    {
+      "principalId": "0c1d180e-0000-4000-8000-919a5a66219e",
+      "principalType": "User",
+      "principalName": "Huda Al Hashimi",
+      "principalEmail": "huda.alhashimi@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-31"
+    },
+    {
+      "principalId": "aa61b32f-0000-4000-8000-b00cfa5fafdb",
+      "principalType": "User",
+      "principalName": "Noah Al Marri",
+      "principalEmail": "noah.almarri2@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-14"
+    },
+    {
+      "principalId": "06617f95-0000-4000-8000-ffb3ee5a8856",
+      "principalType": "User",
+      "principalName": "Shaikha Al Marri",
+      "principalEmail": "shaikha.almarri@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-02"
+    },
+    {
+      "principalId": "0a42be3f-0000-4000-8000-9dbc1deb979d",
+      "principalType": "User",
+      "principalName": "Layla Johnson",
+      "principalEmail": "layla.johnson@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "321a6c3f-0000-4000-8000-e413d975a562",
+      "principalType": "User",
+      "principalName": "Emma Habib",
+      "principalEmail": "emma.habib@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-22"
+    },
+    {
+      "principalId": "6d79d8bf-0000-4000-8000-bee362d846d0",
+      "principalType": "User",
+      "principalName": "Fatima Ibrahim",
+      "principalEmail": "fatima.ibrahim@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-23"
+    },
+    {
+      "principalId": "166cdd33-0000-4000-8000-d4cafe1ad905",
+      "principalType": "User",
+      "principalName": "Fatima Farah",
+      "principalEmail": "fatima.farah@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-13"
+    },
+    {
+      "principalId": "55dddf38-0000-4000-8000-2d4960329ee6",
+      "principalType": "User",
+      "principalName": "Khalid Patel",
+      "principalEmail": "khalid.patel2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-22"
+    },
+    {
+      "principalId": "7d9704fe-0000-4000-8000-9b9a95d03545",
+      "principalType": "User",
+      "principalName": "Omar Farah",
+      "principalEmail": "omar.farah2@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-28"
+    },
+    {
+      "principalId": "bedd62a7-0000-4000-8000-f60294c0b9e0",
+      "principalType": "User",
+      "principalName": "Wafa Al Nuaimi",
+      "principalEmail": "wafa.alnuaimi@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "42710779-0000-4000-8000-1df594e74f26",
+      "principalType": "User",
+      "principalName": "Nasser Nassar",
+      "principalEmail": "nasser.nassar@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-23"
+    },
+    {
+      "principalId": "0c78947b-0000-4000-8000-5dd2a0c69223",
+      "principalType": "User",
+      "principalName": "Majid Al Nuaimi",
+      "principalEmail": "majid.alnuaimi3@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-28"
+    },
+    {
+      "principalId": "24caabcb-0000-4000-8000-befb480afe9f",
+      "principalType": "User",
+      "principalName": "Dana Haddad",
+      "principalEmail": "dana.haddad@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "0472f9f6-0000-4000-8000-9f86592448ee",
+      "principalType": "User",
+      "principalName": "Adel Ibrahim",
+      "principalEmail": "adel.ibrahim@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "b023dbc3-0000-4000-8000-402d4eb39f63",
+      "principalType": "User",
+      "principalName": "Sofia Farah",
+      "principalEmail": "sofia.farah@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-24"
+    },
+    {
+      "principalId": "97da64cb-0000-4000-8000-3ce37815c7df",
+      "principalType": "User",
+      "principalName": "Shaikha Al Suwaidi",
+      "principalEmail": "shaikha.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-15"
+    },
+    {
+      "principalId": "9ceab67b-0000-4000-8000-32bd117e894e",
+      "principalType": "User",
+      "principalName": "Adel Qureshi",
+      "principalEmail": "adel.qureshi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-26"
+    },
+    {
+      "principalId": "7986f498-0000-4000-8000-e11b2f64672f",
+      "principalType": "User",
+      "principalName": "Adel Al Nuaimi",
+      "principalEmail": "adel.alnuaimi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-24"
+    },
+    {
+      "principalId": "b8ddf15d-0000-4000-8000-a7fe150e3388",
+      "principalType": "User",
+      "principalName": "Aisha Al Suwaidi",
+      "principalEmail": "aisha.alsuwaidi2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-25"
+    },
+    {
+      "principalId": "ac0e7307-0000-4000-8000-e04965787d0c",
+      "principalType": "User",
+      "principalName": "Saeed Al Suwaidi",
+      "principalEmail": "saeed.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "6675d5e2-0000-4000-8000-4b7447656069",
+      "principalType": "User",
+      "principalName": "Maha Farah",
+      "principalEmail": "maha.farah2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-19"
+    },
+    {
+      "principalId": "d48f5ba3-0000-4000-8000-c3e82dd93719",
+      "principalType": "User",
+      "principalName": "Emma Farah",
+      "principalEmail": "emma.farah@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-10"
+    },
+    {
+      "principalId": "927c5ea7-0000-4000-8000-5007dab6c73d",
+      "principalType": "User",
+      "principalName": "Yousef Osman",
+      "principalEmail": "yousef.osman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-25"
+    },
+    {
+      "principalId": "520b28f6-0000-4000-8000-41a30b8ce21f",
+      "principalType": "User",
+      "principalName": "Nasser Johnson",
+      "principalEmail": "nasser.johnson2@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-25"
+    },
+    {
+      "principalId": "697437ea-0000-4000-8000-7ec73e85c8c4",
+      "principalType": "User",
+      "principalName": "Faisal Nassar",
+      "principalEmail": "faisal.nassar@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-09"
+    },
+    {
+      "principalId": "6bd1f826-0000-4000-8000-c16651071545",
+      "principalType": "User",
+      "principalName": "Maha Aziz",
+      "principalEmail": "maha.aziz@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-23"
+    },
+    {
+      "principalId": "33a67403-0000-4000-8000-932036cdf42f",
+      "principalType": "User",
+      "principalName": "Saeed Sharma",
+      "principalEmail": "saeed.sharma@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "79ab3018-0000-4000-8000-b1d335b1773c",
+      "principalType": "User",
+      "principalName": "Wafa Kumar",
+      "principalEmail": "wafa.kumar@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-27"
+    },
+    {
+      "principalId": "66fd3215-0000-4000-8000-5f82dcda8cc1",
+      "principalType": "User",
+      "principalName": "Huda Ibrahim",
+      "principalEmail": "huda.ibrahim@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-14"
+    },
+    {
+      "principalId": "a2491260-0000-4000-8000-d32bd8914adf",
+      "principalType": "User",
+      "principalName": "Adel Osman",
+      "principalEmail": "adel.osman@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-01"
+    },
+    {
+      "principalId": "67e6d49a-0000-4000-8000-4cc71d122ccf",
+      "principalType": "User",
+      "principalName": "Priya Al Balushi",
+      "principalEmail": "priya.albalushi@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-12"
+    },
+    {
+      "principalId": "097913a0-0000-4000-8000-8ba028cbb7ca",
+      "principalType": "User",
+      "principalName": "Noura Aziz",
+      "principalEmail": "noura.aziz@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-15"
+    },
+    {
+      "principalId": "0518bd4d-0000-4000-8000-a0b8157c6813",
+      "principalType": "User",
+      "principalName": "Tariq Farah",
+      "principalEmail": "tariq.farah@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-17"
+    },
+    {
+      "principalId": "eed4db89-0000-4000-8000-fe2e40767e21",
+      "principalType": "User",
+      "principalName": "Hamdan Smith",
+      "principalEmail": "hamdan.smith@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-28"
+    },
+    {
+      "principalId": "2cd6e8df-0000-4000-8000-8c91f84ce7a9",
+      "principalType": "User",
+      "principalName": "Mei Habib",
+      "principalEmail": "mei.habib@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-21"
+    },
+    {
+      "principalId": "efdd6a87-0000-4000-8000-f3505ced7017",
+      "principalType": "User",
+      "principalName": "Priya Al Mansoori",
+      "principalEmail": "priya.almansoori@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-30"
+    },
+    {
+      "principalId": "4c23e844-0000-4000-8000-d005a4f954fc",
+      "principalType": "User",
+      "principalName": "Majid Smith",
+      "principalEmail": "majid.smith@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-02-25"
+    },
+    {
+      "principalId": "d30bef65-0000-4000-8000-859db2cfba8b",
+      "principalType": "User",
+      "principalName": "Fatima Kamal",
+      "principalEmail": "fatima.kamal@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-18"
+    },
+    {
+      "principalId": "a43f683a-0000-4000-8000-e305a151ed02",
+      "principalType": "User",
+      "principalName": "Reem Kumar",
+      "principalEmail": "reem.kumar@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "28670d3b-0000-4000-8000-429bc35ea18a",
+      "principalType": "User",
+      "principalName": "Aisha Al Balushi",
+      "principalEmail": "aisha.albalushi@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-29"
+    },
+    {
+      "principalId": "5e1b015f-0000-4000-8000-72ef92051da0",
+      "principalType": "User",
+      "principalName": "Dana Qureshi",
+      "principalEmail": "dana.qureshi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-05"
+    },
+    {
+      "principalId": "263553ba-0000-4000-8000-bc60f541a44e",
+      "principalType": "User",
+      "principalName": "Sultan Ibrahim",
+      "principalEmail": "sultan.ibrahim@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-18"
+    },
+    {
+      "principalId": "1e56d346-0000-4000-8000-6802b6ac1c8e",
+      "principalType": "User",
+      "principalName": "Khalid Rahman",
+      "principalEmail": "khalid.rahman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "ad5c3c49-0000-4000-8000-5c596b17bd75",
+      "principalType": "User",
+      "principalName": "Reem Al Mansoori",
+      "principalEmail": "reem.almansoori2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-04-14"
+    },
+    {
+      "principalId": "b55d2fc1-0000-4000-8000-256741980029",
+      "principalType": "User",
+      "principalName": "Sofia Nassar",
+      "principalEmail": "sofia.nassar@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-12"
+    },
+    {
+      "principalId": "5ef361c2-0000-4000-8000-150e8f3f5995",
+      "principalType": "User",
+      "principalName": "Reem Khan",
+      "principalEmail": "reem.khan@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-25"
+    },
+    {
+      "principalId": "6ed47a6d-0000-4000-8000-3bd242a9f7e5",
+      "principalType": "User",
+      "principalName": "Sofia Qureshi",
+      "principalEmail": "sofia.qureshi@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "8458526b-0000-4000-8000-a18e2a3c6137",
+      "principalType": "User",
+      "principalName": "Khalid Saleh",
+      "principalEmail": "khalid.saleh@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "1fa7cddf-0000-4000-8000-684f17f4b85d",
+      "principalType": "User",
+      "principalName": "Hamdan Farah",
+      "principalEmail": "hamdan.farah3@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-29"
+    },
+    {
+      "principalId": "921f266f-0000-4000-8000-7e0813ab7d2c",
+      "principalType": "User",
+      "principalName": "Adel Patel",
+      "principalEmail": "adel.patel@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-26"
+    },
+    {
+      "principalId": "73fe7e1d-0000-4000-8000-6c38211b20eb",
+      "principalType": "User",
+      "principalName": "Dana Habib",
+      "principalEmail": "dana.habib@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-09"
+    },
+    {
+      "principalId": "dd926cbf-0000-4000-8000-0a8016d50b84",
+      "principalType": "User",
+      "principalName": "Liam Ibrahim",
+      "principalEmail": "liam.ibrahim2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "4c6d8ddd-0000-4000-8000-dd5ecd14eacb",
+      "principalType": "User",
+      "principalName": "Dana Kumar",
+      "principalEmail": "dana.kumar2@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "79f7f38c-0000-4000-8000-2e316c4e5a8c",
+      "principalType": "User",
+      "principalName": "Liam Al Mansoori",
+      "principalEmail": "liam.almansoori@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-23"
+    },
+    {
+      "principalId": "ad2b2c82-0000-4000-8000-4f65b6b0d0b9",
+      "principalType": "User",
+      "principalName": "Latifa Qureshi",
+      "principalEmail": "latifa.qureshi2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-28"
+    },
+    {
+      "principalId": "d76f0813-0000-4000-8000-daff85e95c6c",
+      "principalType": "User",
+      "principalName": "Liam Habib",
+      "principalEmail": "liam.habib@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-09"
+    },
+    {
+      "principalId": "042a2f64-0000-4000-8000-5bee767f3c15",
+      "principalType": "User",
+      "principalName": "Fatima Farah",
+      "principalEmail": "fatima.farah2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-18"
+    },
+    {
+      "principalId": "cece36ae-0000-4000-8000-5fd7cf5c8dd3",
+      "principalType": "User",
+      "principalName": "Huda Kumar",
+      "principalEmail": "huda.kumar2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "88ccddbc-0000-4000-8000-ca34017f319f",
+      "principalType": "User",
+      "principalName": "Priya Zaman",
+      "principalEmail": "priya.zaman@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-26"
+    },
+    {
+      "principalId": "9de2fd3f-0000-4000-8000-ca3dacd380ef",
+      "principalType": "User",
+      "principalName": "Rashid Aziz",
+      "principalEmail": "rashid.aziz@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-23"
+    },
+    {
+      "principalId": "a60c2bed-0000-4000-8000-7bcaa655596c",
+      "principalType": "User",
+      "principalName": "Reem Al Nuaimi",
+      "principalEmail": "reem.alnuaimi@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-06"
+    },
+    {
+      "principalId": "f6bffaa9-0000-4000-8000-0a0c78b3842a",
+      "principalType": "User",
+      "principalName": "Fatima Osman",
+      "principalEmail": "fatima.osman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-06"
+    },
+    {
+      "principalId": "fabfa7ef-0000-4000-8000-fdccd93eea4d",
+      "principalType": "User",
+      "principalName": "Salma Saleh",
+      "principalEmail": "salma.saleh@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-20"
+    },
+    {
+      "principalId": "e39eb7c2-0000-4000-8000-fd541defd401",
+      "principalType": "User",
+      "principalName": "James Aziz",
+      "principalEmail": "james.aziz@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-22"
+    },
+    {
+      "principalId": "a82e6889-0000-4000-8000-c7deb61d56f5",
+      "principalType": "User",
+      "principalName": "Noah Rahman",
+      "principalEmail": "noah.rahman@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-26"
+    },
+    {
+      "principalId": "fe678797-0000-4000-8000-782d4dbc217c",
+      "principalType": "User",
+      "principalName": "Majid Qureshi",
+      "principalEmail": "majid.qureshi@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-28"
+    },
+    {
+      "principalId": "104c6350-0000-4000-8000-3a5a6e3d2494",
+      "principalType": "User",
+      "principalName": "Olivia Nassar",
+      "principalEmail": "olivia.nassar@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-25"
+    },
+    {
+      "principalId": "ab636d66-0000-4000-8000-19d0b4d6f3e6",
+      "principalType": "User",
+      "principalName": "Faisal Chen",
+      "principalEmail": "faisal.chen2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "818270d2-0000-4000-8000-4eff196b58f1",
+      "principalType": "User",
+      "principalName": "James Farah",
+      "principalEmail": "james.farah@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-26"
+    },
+    {
+      "principalId": "2bd7d038-0000-4000-8000-beaf441999b6",
+      "principalType": "User",
+      "principalName": "Noura Zaman",
+      "principalEmail": "noura.zaman@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-08"
+    },
+    {
+      "principalId": "3a6a22d9-0000-4000-8000-db8ecd40b648",
+      "principalType": "User",
+      "principalName": "Sultan Patel",
+      "principalEmail": "sultan.patel@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "2a112eab-0000-4000-8000-c95a0fbc6377",
+      "principalType": "User",
+      "principalName": "Mariam Farah",
+      "principalEmail": "mariam.farah@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-03"
+    },
+    {
+      "principalId": "eba2a67c-0000-4000-8000-ced0b3468999",
+      "principalType": "User",
+      "principalName": "Hamdan Costa",
+      "principalEmail": "hamdan.costa@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "8a713a73-0000-4000-8000-2f8636b74e27",
+      "principalType": "User",
+      "principalName": "Amal Al Mansoori",
+      "principalEmail": "amal.almansoori@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-29"
+    },
+    {
+      "principalId": "3bdccce0-0000-4000-8000-91ae4c987a1b",
+      "principalType": "User",
+      "principalName": "Khalid Saleh",
+      "principalEmail": "khalid.saleh2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-24"
+    },
+    {
+      "principalId": "d4147d03-0000-4000-8000-2f3b14fa7d50",
+      "principalType": "User",
+      "principalName": "Saeed Al Marri",
+      "principalEmail": "saeed.almarri@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "df3c5c8a-0000-4000-8000-ff669594eea8",
+      "principalType": "User",
+      "principalName": "James Kamal",
+      "principalEmail": "james.kamal@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-03"
+    },
+    {
+      "principalId": "366fbddd-0000-4000-8000-10b1792dd499",
+      "principalType": "User",
+      "principalName": "Faisal Smith",
+      "principalEmail": "faisal.smith@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-08"
+    },
+    {
+      "principalId": "273ef6f4-0000-4000-8000-9c1f5f187c02",
+      "principalType": "User",
+      "principalName": "Arun Sharma",
+      "principalEmail": "arun.sharma2@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-18"
+    },
+    {
+      "principalId": "90d5e87e-0000-4000-8000-acf7e6793a4b",
+      "principalType": "User",
+      "principalName": "Latifa Kumar",
+      "principalEmail": "latifa.kumar@gov.ae",
+      "roleDefinitionName": "Custom - Access Deployer",
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleDefinitions/write"
+      ],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "9fa38f4b-0000-4000-8000-77346321d753",
+      "principalType": "User",
+      "principalName": "Ahmad Nassar",
+      "principalEmail": "ahmad.nassar2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "8f31bf2e-0000-4000-8000-098ee598e5c2",
+      "principalType": "User",
+      "principalName": "Wafa Smith",
+      "principalEmail": "wafa.smith@gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-28"
+    },
+    {
+      "principalId": "96c1b183-0000-4000-8000-0be9ef10b6cc",
+      "principalType": "User",
+      "principalName": "Liam Osman",
+      "principalEmail": "liam.osman@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-08"
+    },
+    {
+      "principalId": "8ab20bf4-0000-4000-8000-49be490ccf97",
+      "principalType": "User",
+      "principalName": "Rashid Wang",
+      "principalEmail": "rashid.wang@gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-21"
+    },
+    {
+      "principalId": "1d75f901-0000-4000-8000-a2fc0f8593c3",
+      "principalType": "User",
+      "principalName": "Mariam Ibrahim",
+      "principalEmail": "mariam.ibrahim2@gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "20257194-0000-4000-8000-d04191788bdd",
+      "principalType": "User",
+      "principalName": "Nasser Sharma",
+      "principalEmail": "nasser.sharma@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-06"
+    },
+    {
+      "principalId": "9ee827fa-0000-4000-8000-00472ad98682",
+      "principalType": "User",
+      "principalName": "Majid Smith",
+      "principalEmail": "majid.smith2@gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-08"
+    },
+    {
+      "principalId": "82a4e22e-0000-4000-8000-52a50ba4e32b",
+      "principalType": "User",
+      "principalName": "Noura Osman",
+      "principalEmail": "noura.osman2@gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-26"
+    },
+    {
+      "principalId": "b11cc20e-0000-4000-8000-023079fdcd33",
+      "principalType": "User",
+      "principalName": "Mei Sharma",
+      "principalEmail": "mei.sharma@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-29"
+    },
+    {
+      "principalId": "63021daa-0000-4000-8000-0451fbda05ae",
+      "principalType": "User",
+      "principalName": "Noah Kumar",
+      "principalEmail": "noah.kumar@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-01"
+    },
+    {
+      "principalId": "3106e8ce-0000-4000-8000-9b3aa00f80d4",
+      "principalType": "User",
+      "principalName": "Wei Silva",
+      "principalEmail": "wei.silva@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-27"
+    },
+    {
+      "principalId": "80155756-0000-4000-8000-21762cef7557",
+      "principalType": "User",
+      "principalName": "Maha Al Suwaidi",
+      "principalEmail": "maha.alsuwaidi@gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-30"
+    },
+    {
+      "principalId": "febf4c56-0000-4000-8000-3e5146273272",
+      "principalType": "User",
+      "principalName": "Emma Osman",
+      "principalEmail": "emma.osman2@gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-02"
+    },
+    {
+      "principalId": "7adf1458-0000-4000-8000-0c4ccedcf5bf",
+      "principalType": "User",
+      "principalName": "Liam Saleh",
+      "principalEmail": "liam.saleh@gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-28"
+    },
+    {
+      "principalId": "c39bf6de-0000-4000-8000-e495a016db34",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-billing-sync-000",
+      "principalEmail": "svc-billing-sync-000@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-28"
+    },
+    {
+      "principalId": "c080aba4-0000-4000-8000-e82502b71c51",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-billing-sync-002",
+      "principalEmail": "svc-billing-sync-002@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-29"
+    },
+    {
+      "principalId": "314674a6-0000-4000-8000-064a1a49de98",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-003",
+      "principalEmail": "svc-backup-003@service.gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "0f7c59ad-0000-4000-8000-b72ac11ea16b",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-monitoring-004",
+      "principalEmail": "svc-monitoring-004@service.gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-21"
+    },
+    {
+      "principalId": "4a832ab5-0000-4000-8000-0423f863af2d",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-005",
+      "principalEmail": "svc-etl-005@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-17"
+    },
+    {
+      "principalId": "aaf8e1d5-0000-4000-8000-ef4ffb5f5290",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-007",
+      "principalEmail": "svc-etl-007@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-14"
+    },
+    {
+      "principalId": "bd75f95c-0000-4000-8000-ccf5348f9ce0",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-009",
+      "principalEmail": "svc-etl-009@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-09-07"
+    },
+    {
+      "principalId": "70be9630-0000-4000-8000-167a5c230306",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-010",
+      "principalEmail": "svc-backup-010@service.gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-06"
+    },
+    {
+      "principalId": "2db4e428-0000-4000-8000-5a2605808066",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-011",
+      "principalEmail": "svc-vm-agent-011@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-06"
+    },
+    {
+      "principalId": "e1b4b7ef-0000-4000-8000-3cab10bc94d3",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-ci-012",
+      "principalEmail": "svc-ci-012@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-31"
+    },
+    {
+      "principalId": "26087b53-0000-4000-8000-1b443f46a43a",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-013",
+      "principalEmail": "svc-vm-agent-013@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-24"
+    },
+    {
+      "principalId": "5fcfe711-0000-4000-8000-edb484d62148",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-014",
+      "principalEmail": "svc-vm-agent-014@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-22"
+    },
+    {
+      "principalId": "794836f2-0000-4000-8000-cd4894c8a69d",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-015",
+      "principalEmail": "svc-vm-agent-015@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-09"
+    },
+    {
+      "principalId": "92455468-0000-4000-8000-82515fc57ff4",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-016",
+      "principalEmail": "svc-etl-016@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-20"
+    },
+    {
+      "principalId": "9f021a19-0000-4000-8000-e6fd6d150b06",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-017",
+      "principalEmail": "svc-reporting-017@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-25"
+    },
+    {
+      "principalId": "71127f4b-0000-4000-8000-b7db136d6cce",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-data-pipeline-018",
+      "principalEmail": "svc-data-pipeline-018@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-05"
+    },
+    {
+      "principalId": "acd3d56f-0000-4000-8000-9afd40018cbe",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-ci-019",
+      "principalEmail": "svc-ci-019@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-18"
+    },
+    {
+      "principalId": "65c2e80d-0000-4000-8000-6b74bfc77282",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-020",
+      "principalEmail": "svc-vm-agent-020@service.gov.ae",
+      "roleDefinitionName": "Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-26"
+    },
+    {
+      "principalId": "8ef65ee8-0000-4000-8000-47245fec59ac",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-ci-021",
+      "principalEmail": "svc-ci-021@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "9642b052-0000-4000-8000-4eb0239e5593",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-monitoring-022",
+      "principalEmail": "svc-monitoring-022@service.gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-16"
+    },
+    {
+      "principalId": "4dfd3ecd-0000-4000-8000-35682be26bd1",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-023",
+      "principalEmail": "svc-backup-023@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-15"
+    },
+    {
+      "principalId": "46834cc5-0000-4000-8000-e43624877651",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-monitoring-028",
+      "principalEmail": "svc-monitoring-028@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-06"
+    },
+    {
+      "principalId": "eb3cc270-0000-4000-8000-984bcad73d36",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-scanner-029",
+      "principalEmail": "svc-scanner-029@service.gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-12"
+    },
+    {
+      "principalId": "c78e0272-0000-4000-8000-e6e168fc0e45",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-032",
+      "principalEmail": "svc-etl-032@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-30"
+    },
+    {
+      "principalId": "658c72ee-0000-4000-8000-804f02bfaf1c",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-033",
+      "principalEmail": "svc-vm-agent-033@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-24"
+    },
+    {
+      "principalId": "bfa93b6e-0000-4000-8000-ec367c192e61",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-034",
+      "principalEmail": "svc-backup-034@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-06-02"
+    },
+    {
+      "principalId": "c37a927b-0000-4000-8000-8be7ad68fb45",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-etl-036",
+      "principalEmail": "svc-etl-036@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-03-22"
+    },
+    {
+      "principalId": "e8a44238-0000-4000-8000-2eca3332432b",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-038",
+      "principalEmail": "svc-backup-038@service.gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-11-20"
+    },
+    {
+      "principalId": "b958d153-0000-4000-8000-d4d40b44676d",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-039",
+      "principalEmail": "svc-backup-039@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-31"
+    },
+    {
+      "principalId": "6d899035-0000-4000-8000-6d743b7f1998",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-scanner-040",
+      "principalEmail": "svc-scanner-040@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-21"
+    },
+    {
+      "principalId": "5e75788f-0000-4000-8000-d27b37f39aac",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-041",
+      "principalEmail": "svc-reporting-041@service.gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-07"
+    },
+    {
+      "principalId": "91b76c45-0000-4000-8000-aa022207cb65",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-042",
+      "principalEmail": "svc-backup-042@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-26"
+    },
+    {
+      "principalId": "03671560-0000-4000-8000-9e211fc22517",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-043",
+      "principalEmail": "svc-reporting-043@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-01-07"
+    },
+    {
+      "principalId": "54ce20ea-0000-4000-8000-69603e040782",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-data-pipeline-045",
+      "principalEmail": "svc-data-pipeline-045@service.gov.ae",
+      "roleDefinitionName": "Virtual Machine Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-03"
+    },
+    {
+      "principalId": "f42323d9-0000-4000-8000-4876fdf48930",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-data-pipeline-046",
+      "principalEmail": "svc-data-pipeline-046@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-14"
+    },
+    {
+      "principalId": "3291bc95-0000-4000-8000-5a556c8c5d0e",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-ci-048",
+      "principalEmail": "svc-ci-048@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2025-12-03"
+    },
+    {
+      "principalId": "7b2e00e6-0000-4000-8000-cbe65c0d8fcc",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-049",
+      "principalEmail": "svc-reporting-049@service.gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-14"
+    },
+    {
+      "principalId": "741f5545-0000-4000-8000-f6319b247a55",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-billing-sync-051",
+      "principalEmail": "svc-billing-sync-051@service.gov.ae",
+      "roleDefinitionName": "Network Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-20"
+    },
+    {
+      "principalId": "90cbb982-0000-4000-8000-b278b8e51141",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-ci-053",
+      "principalEmail": "svc-ci-053@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-06-25"
+    },
+    {
+      "principalId": "ae5a5f99-0000-4000-8000-7ead41190559",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-054",
+      "principalEmail": "svc-vm-agent-054@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-24"
+    },
+    {
+      "principalId": "cc2b2f49-0000-4000-8000-4911d0713f73",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-data-pipeline-056",
+      "principalEmail": "svc-data-pipeline-056@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-06"
+    },
+    {
+      "principalId": "2baeafc7-0000-4000-8000-5f6f5fe92750",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-057",
+      "principalEmail": "svc-vm-agent-057@service.gov.ae",
+      "roleDefinitionName": "Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-19"
+    },
+    {
+      "principalId": "311f5d4a-0000-4000-8000-d14ddf223246",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-058",
+      "principalEmail": "svc-reporting-058@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-12"
+    },
+    {
+      "principalId": "19cea0c3-0000-4000-8000-883b0fa1659f",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-059",
+      "principalEmail": "svc-vm-agent-059@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-20"
+    },
+    {
+      "principalId": "d11ce5c8-0000-4000-8000-b8f0f0e4ca0b",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-061",
+      "principalEmail": "svc-vm-agent-061@service.gov.ae",
+      "roleDefinitionName": "SQL DB Contributor",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-27"
+    },
+    {
+      "principalId": "d0a73b72-0000-4000-8000-e7615e516bf8",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-062",
+      "principalEmail": "svc-reporting-062@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-19"
+    },
+    {
+      "principalId": "14d49d3a-0000-4000-8000-f3c6ee4bd350",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-monitoring-063",
+      "principalEmail": "svc-monitoring-063@service.gov.ae",
+      "roleDefinitionName": "Monitoring Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-03"
+    },
+    {
+      "principalId": "dff1f5e3-0000-4000-8000-f6de1d9d1d80",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-monitoring-064",
+      "principalEmail": "svc-monitoring-064@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-21"
+    },
+    {
+      "principalId": "7df102c2-0000-4000-8000-c10757dda51e",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-scanner-066",
+      "principalEmail": "svc-scanner-066@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-07-10"
+    },
+    {
+      "principalId": "92a593c8-0000-4000-8000-00dcbca6a6b0",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-backup-067",
+      "principalEmail": "svc-backup-067@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-05-14"
+    },
+    {
+      "principalId": "da3465d9-0000-4000-8000-4a1650e08a81",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-vm-agent-068",
+      "principalEmail": "svc-vm-agent-068@service.gov.ae",
+      "roleDefinitionName": "Billing Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-08-23"
+    },
+    {
+      "principalId": "92efd363-0000-4000-8000-fd7337387270",
+      "principalType": "ServicePrincipal",
+      "principalName": "svc-reporting-069",
+      "principalEmail": "svc-reporting-069@service.gov.ae",
+      "roleDefinitionName": "Storage Blob Data Reader",
+      "actions": [],
+      "scope": "/subscriptions/gov-azure-sub-9f2a/resourceGroups/rg-prod",
+      "lastSignInDateTime": "2026-09-04"
+    }
+  ]
+}
