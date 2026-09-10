@@ -1,5 +1,6 @@
 # Multi-Cloud Access Governance Dashboard - dependencies
-streamlit>=1.30
-pandas>=2.0
-altair>=5.0
-reportlab>=4.0
+# Floors are the versions the prototype was verified against (2026-09-09).
+streamlit>=1.63
+pandas>=3.0
+altair>=6.0
+reportlab>=5.0

@@ -144,7 +144,7 @@ with ch1:
             domain=list(SEVERITY_COLORS), range=list(SEVERITY_COLORS.values())),
             legend=None),
     ).properties(height=240)
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart, width="stretch")
 
 with ch2:
     st.subheader("Findings by rule")
@@ -154,7 +154,7 @@ with ch2:
     ).sort_values("Count", ascending=False)
     chart = alt.Chart(rule_df).mark_bar(color="#2563eb").encode(
         x="Count", y=alt.Y("Rule", sort="-x")).properties(height=240)
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart, width="stretch")
 
 with ch3:
     st.subheader("Risk exposure by department")
@@ -164,7 +164,7 @@ with ch3:
         for d in all_depts]).sort_values("Risk", ascending=False).head(8)
     chart = alt.Chart(dept_df).mark_bar(color="#b91c1c").encode(
         x="Risk", y=alt.Y("Department", sort="-x")).properties(height=240)
-    st.altair_chart(chart, use_container_width=True)
+    st.altair_chart(chart, width="stretch")
 
 st.divider()
 
@@ -185,7 +185,7 @@ with left:
         st.info("No identities match the current filters.")
     else:
         st.dataframe(
-            fdf, use_container_width=True, hide_index=True, height=460,
+            fdf, width="stretch", hide_index=True, height=460,
             column_config={
                 "Risk": st.column_config.ProgressColumn(
                     "Risk", min_value=0, max_value=100, format="%d"),
@@ -231,15 +231,15 @@ st.subheader("Export findings report")
 e1, e2, e3 = st.columns(3)
 e1.download_button(
     "⬇️ Findings (CSV)", data=findings_to_csv(filtered),
-    file_name="access_findings.csv", mime="text/csv", use_container_width=True)
+    file_name="access_findings.csv", mime="text/csv", width="stretch")
 e2.download_button(
     "⬇️ Identity summary (CSV)", data=summary_csv(filtered),
-    file_name="identity_summary.csv", mime="text/csv", use_container_width=True)
+    file_name="identity_summary.csv", mime="text/csv", width="stretch")
 try:
     e3.download_button(
         "⬇️ Executive report (PDF)", data=findings_to_pdf(filtered, ref),
         file_name="access_governance_report.pdf", mime="application/pdf",
-        use_container_width=True)
+        width="stretch")
 except Exception as exc:  # reportlab optional at runtime
     e3.info(f"PDF export unavailable: {exc}")
 

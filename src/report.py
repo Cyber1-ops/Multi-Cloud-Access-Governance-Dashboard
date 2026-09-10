@@ -79,7 +79,7 @@ def findings_to_pdf(results: list[dict], ref: date, top_n: int = 25) -> bytes:
 
     flow.append(Paragraph("Multi-Cloud Access Governance - Findings Report", styles["Title"]))
     flow.append(Paragraph(f"Estate snapshot as of {ref.isoformat()} &bull; "
-                          f"{len(results)} identities analysed &bull; "
+                          f"{len(results)} identities in scope &bull; "
                           f"{len(flagged)} flagged", styles["Normal"]))
     flow.append(Spacer(1, 6 * mm))
 
@@ -108,7 +108,7 @@ def findings_to_pdf(results: list[dict], ref: date, top_n: int = 25) -> bytes:
             str(r["risk_score"]), r["severity"],
             Paragraph(f"{r['name']}<br/><font size=6>{r['email']}</font>", small),
             Paragraph(r["department"], small),
-            ",".join(p.upper() for p in r["providers"]),
+            Paragraph(", ".join(p.upper() for p in r["providers"]), small),
             Paragraph(", ".join(f.title for f in r["findings"]), small),
         ])
     t = Table(data, colWidths=[12 * mm, 18 * mm, 42 * mm, 24 * mm, 20 * mm, 58 * mm],
