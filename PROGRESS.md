@@ -1,7 +1,7 @@
 # PROGRESS / HANDOFF — Multi-Cloud Access Governance Dashboard
 
 > **Read this first.** This file is the single source of truth for the current
-> state of the project. It is written for the next AI agent (or teammate) to
+> state of the project. It is written for the next teammate to
 > pick up work with zero prior context. Last updated: **2026-09-08**.
 
 ---
