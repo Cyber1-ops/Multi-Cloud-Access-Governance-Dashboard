@@ -71,7 +71,7 @@ class UnifiedIdentity:
 
 
 def _parse_date(s: str | None) -> date | None:
-    if not s:
+    if not isinstance(s, str) or not s.strip():
         return None
     for fmt in ("%Y-%m-%d", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%dT%H:%M:%SZ"):
         try:
@@ -84,19 +84,40 @@ def _parse_date(s: str | None) -> date | None:
         return None
 
 
+# Type-coercion helpers: real exports get hand-edited, truncated and
+# re-encoded, so every value is validated at the boundary instead of trusted.
+def _as_dict(value) -> dict:
+    return value if isinstance(value, dict) else {}
+
+
+def _as_list(value) -> list:
+    if isinstance(value, list):
+        return value
+    if isinstance(value, dict):
+        return [value]
+    return []
+
+
+def _as_str(value) -> str:
+    return value.strip() if isinstance(value, str) else ""
+
+
 def _load_json(path: str, default):
+    """Load a JSON object; missing, unreadable, invalid or non-object -> default."""
     try:
         with open(path, encoding="utf-8") as f:
-            return json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
+            data = json.load(f)
+    except (OSError, ValueError):  # missing/unreadable, bad JSON, bad encoding
         return default
+    return data if isinstance(data, dict) else default
 
 
 def _load_csv(path: str) -> list[dict]:
+    """Load CSV rows; missing, unreadable or malformed file -> empty list."""
     try:
-        with open(path, encoding="utf-8") as f:
-            return list(csv.DictReader(f))
-    except FileNotFoundError:
+        with open(path, encoding="utf-8", newline="") as f:
+            return [row for row in csv.DictReader(f) if isinstance(row, dict)]
+    except (OSError, ValueError, csv.Error):
         return []
 
 
@@ -111,7 +132,7 @@ def load_estate(raw_dir: str = RAW):
 
 def reference_date(aws: dict) -> date:
     """Snapshot 'as of' date, taken from the AWS export; falls back to today."""
-    return _parse_date(aws.get("GeneratedAt")) or date.today()
+    return _parse_date(_as_dict(aws).get("GeneratedAt")) or date.today()
 
 
 def build_identities(raw_dir: str = RAW) -> tuple[list[UnifiedIdentity], date]:
@@ -121,26 +142,28 @@ def build_identities(raw_dir: str = RAW) -> tuple[list[UnifiedIdentity], date]:
     # index HR by email
     identities: dict[str, UnifiedIdentity] = {}
     for row in hr:
-        email = (row.get("email") or "").strip().lower()
+        email = _as_str(row.get("email")).lower()
         if not email:
             continue
         identities[email] = UnifiedIdentity(
-            identity_id=row.get("id", ""),
-            name=row.get("name", email),
+            identity_id=_as_str(row.get("id")),
+            name=_as_str(row.get("name")) or email,
             email=email,
-            department=row.get("department", "Unknown"),
-            title=row.get("title", ""),
-            status=row.get("status", "unknown"),
-            hire_date=row.get("hire_date") or None,
-            termination_date=row.get("termination_date") or None,
-            is_service_account=str(row.get("is_service_account", "")).lower() == "true",
+            department=_as_str(row.get("department")) or "Unknown",
+            title=_as_str(row.get("title")),
+            status=_as_str(row.get("status")).lower() or "unknown",
+            hire_date=_as_str(row.get("hire_date")) or None,
+            termination_date=_as_str(row.get("termination_date")) or None,
+            is_service_account=_as_str(row.get("is_service_account")).lower() == "true",
         )
 
     # activity resolution bridge: (provider, principal_ref) -> (email, date)
     act_index: dict[tuple[str, str], tuple[str, date | None]] = {}
     for row in activity:
-        key = (row.get("provider", ""), row.get("principal_ref", ""))
-        act_index[key] = ((row.get("email") or "").strip().lower(),
+        key = (_as_str(row.get("provider")).lower(), _as_str(row.get("principal_ref")))
+        if not key[0] or not key[1]:
+            continue
+        act_index[key] = (_as_str(row.get("email")).lower(),
                           _parse_date(row.get("last_activity")))
 
     def ensure(email: str, name: str, is_sa: bool) -> UnifiedIdentity:
@@ -155,34 +178,41 @@ def build_identities(raw_dir: str = RAW) -> tuple[list[UnifiedIdentity], date]:
         return identities[email]
 
     # ---- AWS -----------------------------------------------------------------
-    for pr in aws.get("Principals", []):
-        email = (pr.get("Email") or "").strip().lower()
+    for pr in _as_list(aws.get("Principals")):
+        pr = _as_dict(pr)
+        email = _as_str(pr.get("Email")).lower()
         if not email:
             continue
-        ident = ensure(email, pr.get("UserName", ""), pr.get("PrincipalType") == "IAMRole")
-        managed = [m.get("PolicyName", "") for m in pr.get("AttachedManagedPolicies", [])]
-        docs = pr.get("InlinePolicyDocuments", [])
+        ptype = _as_str(pr.get("PrincipalType")) or "IAMUser"
+        ident = ensure(email, _as_str(pr.get("UserName")), ptype == "IAMRole")
+        # a managed policy may be {"PolicyName": ...} or a bare name string
+        managed = [m if isinstance(m, str) else _as_str(_as_dict(m).get("PolicyName"))
+                   for m in _as_list(pr.get("AttachedManagedPolicies"))]
+        managed = [m for m in managed if m]
+        docs = [d for d in _as_list(pr.get("InlinePolicyDocuments")) if isinstance(d, dict)]
         caps = normalize_aws({"managed_policies": managed, "policy_documents": docs})
         native = list(managed) + [f"inline-policy({len(docs)})"] if docs else list(managed)
         ident.clouds["aws"] = CloudPresence(
             provider="aws",
-            principal_ref=pr.get("Arn", email),
-            principal_type=pr.get("PrincipalType", "IAMUser"),
+            principal_ref=_as_str(pr.get("Arn")) or email,
+            principal_type=ptype,
             native_roles=native,
             capabilities=caps,
             last_activity=_parse_date(pr.get("LastActivity")),
         )
 
     # ---- Azure ---------------------------------------------------------------
-    for ra in azure.get("roleAssignments", []):
-        email = (ra.get("principalEmail") or "").strip().lower()
+    for ra in _as_list(azure.get("roleAssignments")):
+        ra = _as_dict(ra)
+        email = _as_str(ra.get("principalEmail")).lower()
         if not email:
             continue
-        ident = ensure(email, ra.get("principalName", ""),
-                       ra.get("principalType") == "ServicePrincipal")
+        ptype = _as_str(ra.get("principalType")) or "User"
+        ident = ensure(email, _as_str(ra.get("principalName")), ptype == "ServicePrincipal")
         caps = normalize_azure(ra)
-        role = ra.get("roleDefinitionName", "")
-        native = [role] + [f"action:{a}" for a in ra.get("actions", [])]
+        role = _as_str(ra.get("roleDefinitionName"))
+        native = [role] + [f"action:{a}" for a in _as_list(ra.get("actions"))
+                           if isinstance(a, str)]
         pres = ident.clouds.get("azure")
         if pres:  # multiple assignments -> merge
             pres.capabilities |= caps
@@ -190,21 +220,27 @@ def build_identities(raw_dir: str = RAW) -> tuple[list[UnifiedIdentity], date]:
         else:
             ident.clouds["azure"] = CloudPresence(
                 provider="azure",
-                principal_ref=ra.get("principalId", email),
-                principal_type=ra.get("principalType", "User"),
+                principal_ref=_as_str(ra.get("principalId")) or email,
+                principal_type=ptype,
                 native_roles=native,
                 capabilities=caps,
                 last_activity=_parse_date(ra.get("lastSignInDateTime")),
             )
 
     # ---- GCP -----------------------------------------------------------------
-    for binding in gcp.get("bindings", []):
-        role = binding.get("role", "")
+    for binding in _as_list(gcp.get("bindings")):
+        binding = _as_dict(binding)
+        role = _as_str(binding.get("role"))
         caps = normalize_gcp_role(role)
-        for member in binding.get("members", []):
+        for member in _as_list(binding.get("members")):
+            member = _as_str(member)
+            if not member:
+                continue
             is_sa = member.startswith("serviceAccount:")
             resolved = act_index.get(("gcp", member))
             email = resolved[0] if resolved else member.split(":", 1)[-1]
+            if not email:
+                continue
             last = resolved[1] if resolved else None
             ident = ensure(email, member.split(":", 1)[-1], is_sa)
             pres = ident.clouds.get("gcp")

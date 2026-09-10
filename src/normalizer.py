@@ -96,7 +96,9 @@ def normalize_aws(aws_principal: dict) -> set[str]:
     """Normalize one AWS principal record into common capabilities."""
     caps: set[str] = set()
 
-    for policy_name in aws_principal.get("managed_policies", []):
+    for policy_name in aws_principal.get("managed_policies") or []:
+        if not isinstance(policy_name, str):
+            continue
         rule = _AWS_MANAGED.get(policy_name)
         if rule == "wildcard":
             return expand_wildcard()
@@ -113,17 +115,25 @@ def normalize_aws(aws_principal: dict) -> set[str]:
             caps.add(cap(rule[0], rule[1]))
 
     # Inline / attached policy documents.
-    for doc in aws_principal.get("policy_documents", []):
+    for doc in aws_principal.get("policy_documents") or []:
+        if not isinstance(doc, dict):
+            continue
         statements = doc.get("Statement", [])
         if isinstance(statements, dict):
             statements = [statements]
+        if not isinstance(statements, list):
+            continue
         for stmt in statements:
-            if stmt.get("Effect") != "Allow":
+            if not isinstance(stmt, dict) or stmt.get("Effect") != "Allow":
                 continue
             actions = stmt.get("Action", [])
             if isinstance(actions, str):
                 actions = [actions]
+            if not isinstance(actions, list):
+                continue
             for action in actions:
+                if not isinstance(action, str):
+                    continue
                 if action == "*":
                     return expand_wildcard()
                 if ":" not in action:
@@ -180,7 +190,7 @@ def normalize_azure(azure_assignment: dict) -> set[str]:
 
     caps: set[str] = set()
     role = azure_assignment.get("roleDefinitionName", "")
-    rule = _AZURE_BUILTIN.get(role)
+    rule = _AZURE_BUILTIN.get(role) if isinstance(role, str) else None
 
     if rule == "wildcard":
         return expand_wildcard()
@@ -196,7 +206,14 @@ def normalize_azure(azure_assignment: dict) -> set[str]:
         caps.add(cap(rule[0], rule[1]))
 
     # Custom roles carry an explicit actions[] list.
-    for action in azure_assignment.get("actions", []):
+    actions = azure_assignment.get("actions") or []
+    if isinstance(actions, str):
+        actions = [actions]
+    if not isinstance(actions, list):
+        actions = []
+    for action in actions:
+        if not isinstance(action, str):
+            continue
         a = action.lower()
         if a == "*":
             return expand_wildcard()
@@ -242,6 +259,8 @@ def normalize_gcp_role(role: str) -> set[str]:
     from src.common_model import SERVICES
 
     caps: set[str] = set()
+    if not isinstance(role, str):
+        return caps
     rule = _GCP_ROLE_MAP.get(role)
     if rule == "wildcard":
         return expand_wildcard()
