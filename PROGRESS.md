@@ -2,7 +2,7 @@
 
 > **Read this first.** This file is the single source of truth for the current
 > state of the project. It is written for the next teammate to
-> pick up work with zero prior context. Last updated: **2026-09-08**.
+> pick up work with zero prior context. Last updated: **2026-09-09** (Day 2, by Yahya/captain).
 
 ---
 
@@ -77,28 +77,34 @@ combinations.
 ## 4. Project structure & current state
 
 ```
-school of cyberDefense/
-├─ Rules.txt                     # competition rules (topic, rubric, submission) — SOURCE
-├─ invite email .txt             # competition invite (dates, structure) — SOURCE
-├─ PROGRESS.md                   # THIS FILE
-├─ requirements.txt              # streamlit, pandas, altair, reportlab           [DONE]
-├─ app.py                        # Streamlit dashboard (UI, filters, drill-down)  [DONE, untested-run]
+Multi-Cloud-Access-Governance-Dashboard/     (GitHub: Cyber1-ops/Multi-Cloud-Access-Governance-Dashboard)
+├─ PROGRESS.md                   # THIS FILE (shared handoff between both teammates)
+├─ README.md                     # one-command quickstart, architecture, rules, screenshots [DONE]
+├─ requirements.txt              # streamlit, pandas, altair, reportlab (floors = tested versions) [DONE]
+├─ .gitignore                    # __pycache__, local/                            [DONE]
+├─ app.py                        # Streamlit dashboard (UI, filters, drill-down)  [DONE + RUN OK in browser]
 ├─ data/
-│  ├─ generate_data.py           # synthetic 500-identity estate generator        [DONE + RUN OK]
-│  └─ raw/                        # GENERATED OUTPUT (created by generate_data.py):
+│  ├─ generate_data.py           # synthetic 500-identity estate generator        [DONE + RUN OK, deterministic verified]
+│  └─ raw/                        # GENERATED OUTPUT, committed (created by generate_data.py):
 │     ├─ hr_directory.csv         #   HR system of record (depts, leavers, SAs)
 │     ├─ aws_iam.json             #   AWS native format (per-principal policies)
 │     ├─ azure_role_assignments.json  # Azure native format (flat role assignments)
 │     ├─ gcp_iam_policy.json      #   GCP native format (role -> members bindings)
 │     └─ activity_log.csv         #   unified last-activity signal per principal
-└─ src/
-   ├─ __init__.py
-   ├─ common_model.py            # Common Permission Model / taxonomy               [DONE]
-   ├─ normalizer.py              # AWS/Azure/GCP -> CPM mappers                      [DONE]
-   ├─ pipeline.py                # load + identity-resolve + normalize -> UnifiedIdentity [DONE + RUN OK]
-   ├─ detection.py               # 6 detection rules + additive risk scoring        [DONE + RUN OK]
-   └─ report.py                  # CSV + PDF findings export                        [DONE, PDF untested]
+├─ docs/
+│  └─ screenshots/               # dashboard_overview.png, dashboard_full.png, drilldown_top_finding.png [DONE]
+├─ src/
+│  ├─ __init__.py
+│  ├─ common_model.py            # Common Permission Model / taxonomy               [DONE]
+│  ├─ normalizer.py              # AWS/Azure/GCP -> CPM mappers (type-hardened 09-09) [DONE]
+│  ├─ pipeline.py                # load + identity-resolve + normalize (type-hardened 09-09) [DONE + RUN OK]
+│  ├─ detection.py               # 6 detection rules + additive risk scoring        [DONE + RUN OK]
+│  └─ report.py                  # CSV + PDF findings export                        [DONE + RUN OK, PDF verified]
+└─ tests/
+   └─ test_resilience.py         # 10 stdlib unittest cases: determinism + resilience [DONE, all pass]
 ```
+(Rules.txt and the invite email live outside the repo on the original machine; the
+key facts from them are in sections 1-2 above.)
 
 ### What each module does (for quick orientation)
 - **`src/common_model.py`** — defines `SERVICES`, `LEVELS`, capability constants
@@ -160,67 +166,79 @@ single-service admin (334 hits — too noisy). Tightened to only `wildcard`/`iam
 ("keys to the kingdom") → 7 hits, precise + defensible. See comment in `detection.py`
 Rule 4.
 
+### Day 2 (2026-09-09) verification — all on a second machine (Win 11, Python 3.13.3)
+- `pip install -r requirements.txt` → streamlit 1.63.0, pandas 3.0.2, altair 6.2.2, reportlab 5.0.0. ✅
+- Baseline reproduced exactly on the second machine (500 / 130 flagged / 7 Critical / same top 5). ✅
+- **`streamlit run app.py` ran for the first time** — loads in <2s, KPIs, 3 charts, risk-sorted
+  table with progress bars, drill-down with per-cloud expanders + findings, all render. ✅
+- **Filters exercised in the browser**: removing a cloud (130→125 shown), search "osman"
+  (→6 shown, drill-down switches to Noah Osman), unused-days slider 90→150 (flagged
+  130→109, finding text updates to "150+ days idle"). No exceptions. ✅
+- **PDF export ran for the first time** (reportlab): 2-page A4 report, KPI strip + top-25
+  table. Fixed: Clouds cell now wraps (was overflowing into Findings). ✅
+- **Resilience bug found + fixed**: a string where a list was expected
+  (`AttachedManagedPolicies: "x"`) crashed the pipeline with AttributeError. Loader and
+  normalizer now coerce every value at the boundary (`_as_dict/_as_list/_as_str`),
+  unreadable/non-object files fall back to empty, HR status is normalised to lowercase.
+- **`python -m unittest discover -s tests -v` → 10/10 pass**: generator byte-identical on
+  two runs and identical to committed `data/raw/`; missing azure export / HR / activity
+  log / empty dir; invalid JSON; empty CSV; non-UTF-8 file; JSON top level = list/null/int;
+  wrong-typed fields everywhere (null roles, numeric emails, bad dates, `group:` and
+  `deleted:` GCP members, unknown roles).
+- Streamlit deprecation (`use_container_width` → `width="stretch"`) fixed; server log clean.
+
 ---
 
 ## 6. WHAT IS LEFT TO DO (next steps, in priority order)
 
-### ⛔ BLOCKER encountered
-Installing dependencies was **interrupted/declined by the user**. The command was:
-```
-python -m pip install -r requirements.txt
-```
-**Next agent: ask the user before running installs.** They may prefer a virtualenv,
-`--user`, or to run it themselves. Nothing below can be runtime-verified until deps
-(streamlit, pandas, altair, reportlab) are installed. All *logic* modules
-(generate/pipeline/detection) already run on the **stdlib only** and are verified.
+**Day 2 checklist is complete** (deps, app run, resilience tests, README, screenshots,
+hygiene). Everything below is Day 3 work: the graded artifact.
 
-### Task list (mirrors the in-tool task tracker)
-1. ~~Build synthetic data generator~~ ✅ done
-2. ~~Build normalizer~~ ✅ done
-3. ~~Build detection engine + risk scoring~~ ✅ done
-4. **Build Streamlit dashboard** — code written (`app.py`); **needs a real run** once
-   deps installed (`streamlit run app.py`). Verify charts, table, drill-down, filters.
-5. ~~Add CSV/PDF export~~ ✅ code written; **PDF path (`findings_to_pdf`) not yet executed** —
-   test it (reportlab). CSV path is stdlib, low risk.
-6. **Write README + the 5-page PDF submission** — NOT STARTED. This is the graded artifact.
+### Task list
+1. ~~Build synthetic data generator~~ ✅
+2. ~~Build normalizer~~ ✅
+3. ~~Build detection engine + risk scoring~~ ✅
+4. ~~Build Streamlit dashboard~~ ✅ verified in browser 09-09
+5. ~~Add CSV/PDF export~~ ✅ PDF verified 09-09
+6. ~~Resilience tests~~ ✅ `tests/test_resilience.py`, 10 pass
+7. ~~README~~ ✅ with 3 screenshots in `docs/screenshots/`
+8. **Write the 5-page PDF submission** — NOT STARTED. **This is what the jury grades.**
+9. Prepare the live-demo script (needed only if Top 5, but cheap to draft now).
 
 ### Concrete remaining work
-- [ ] **Install deps** (get user consent): `python -m pip install -r requirements.txt`.
-- [ ] **Run & smoke-test the app**: `streamlit run app.py`. Confirm it loads the 500-identity
-      estate, sorts by risk, drill-down shows evidence, filters work, all 3 exports download.
-- [ ] **Test resilience** (for the 25% "survives second run + unexpected input" score):
-      run generator twice (must be identical), delete/corrupt a raw file and confirm the app
-      degrades gracefully (loaders already default-safe), feed a malformed date.
-- [ ] **Write `README.md`** — one-command quickstart:
-      `python -m pip install -r requirements.txt` → `python data/generate_data.py`
-      → `streamlit run app.py`. Include architecture diagram, rule table, screenshots.
-- [ ] **Write the 5-page PDF** (the actual submission). Suggested page plan:
+- [ ] **Write the 5-page PDF** (≤5 pages, ≤20 MiB, PDF only). Suggested page plan, mapped 1:1
+      to the required sections and the rubric:
       1. **Title** — project name, Team OPSEC, members, competition, date.
-      2. **Project objective** — the business problem (permission drift in gov hybrid
-         estates), who deploys it, what it replaces (manual reviews / siloed consoles).
-      3. **Proposed solution** — architecture (ingest → normalize to CPM → detect → score →
-         dashboard/export), the 3 native formats, the common model, the 6 rules; position
-         vs. CIEM / Zero-Trust / NIST 800-53 AC ("why now").
-      4. **Solution validation** — how it runs from README; determinism; the 500-identity
-         run stats; screenshots of dashboard + a top-3 drill-down with evidence; resilience
-         tests. This is where the 25% prototype + 25% depth marks are evidenced.
-      5. **Results & conclusions** — the numbers (130 flagged, 7 critical, rule breakdown),
-         top-3 walkthrough, remediation value, limitations & next steps.
-      - Generate the PDF from the content (could reuse reportlab, or export from
-        Slides/Canva/LaTeX). Keep ≤ 5 pages, ≤ 20 MiB. **Only captain Yahya uploads.**
-- [ ] Capture demo screenshots for the PDF.
-- [ ] (Optional, if time) small unit tests for the normalizer mappings to bolster
-      "technical correctness."
-- [ ] (If Top 5) prepare a tight live-demo script for GISEC 18 Sept.
-
----
+      2. **Project objective** — permission drift in gov hybrid estates; who deploys it
+         (cloud security / GRC team); what it replaces (manual quarterly access reviews,
+         siloed per-cloud IAM consoles). *(fit-to-brief 20%)*
+      3. **Proposed solution** — architecture diagram (ingest → normalize to CPM → detect →
+         score → dashboard/export; the ASCII version is in README "How it works"), the 3
+         native formats, the common model, the 6-rule table with weights; position vs.
+         CIEM / Zero-Trust least privilege / NIST 800-53 AC-2, AC-6. *(relevance 15%,
+         innovation 15%: cross-cloud superuser + toxic-combo + explainable additive score)*
+      4. **Solution validation** — README one-command run; determinism; second-machine
+         reproduction; the browser-verified filter walkthrough; the resilience test list
+         (all facts are in section 5 of this file); screenshots `dashboard_overview.png` +
+         `drilldown_top_finding.png`. *(prototype works 25%, technical depth 25%)*
+      5. **Results & conclusions** — 500 identities, 130 flagged, 7 Critical / 31 High /
+         25 Medium / 67 Low; rule breakdown; top-3 walkthrough (Huda Qureshi 100, Noah
+         Osman 100, Layla Al Balushi 95) with evidence; remediation value; limitations &
+         next steps (README "Limitations").
+      - Build it with reportlab (already a dependency) or Slides/Canva export. Put the
+        source under `docs/submission/`; keep the final PDF out of git if >5 MB.
+- [ ] **Captain (Yahya) uploads** before **11 Sept 23:59 GST**. Only the captain can.
+- [ ] (Optional) unit tests for the normalizer mappings (`tests/test_normalizer.py`) —
+      cheap extra evidence for "technical correctness".
+- [ ] (If Top 5) tight 5-minute live-demo script for GISEC 18 Sept: open dashboard →
+      sort by risk → top-3 drill-down → toggle slider → export PDF.
 
 ## 7. Schedule (deadline 11 Sept 23:59 GST)
 
 | Day | Plan |
 |---|---|
 | **Day 1 – 8 Sept (done)** | Data generator → normalizer → detection → risk scoring. ✅ All built & verified on stdlib. Dashboard + export code written. |
-| **Day 2 – 9 Sept** | Install deps; run & polish Streamlit app; PDF-export test; resilience tests; capture screenshots; write README. |
+| **Day 2 – 9 Sept (done)** | ✅ Deps installed; app ran & verified in browser; PDF export verified; resilience bug fixed + 10-test suite; screenshots captured; README written; repo hygiene. |
 | **Day 3 – 10 Sept** | Write & design the 5-page PDF mapped 1:1 to the rubric; internal review; buffer. |
 | **11 Sept** | Final polish; **captain uploads the PDF** before 23:59 GST. |
 
@@ -231,6 +249,13 @@ python -m pip install -r requirements.txt
 - **Run commands from the project root** so `from src....` imports resolve. Modules are
   run as `python -m src.pipeline` / `python -m src.detection` (not by file path).
 - **Windows + PowerShell** environment. Use `python -m pip`, not `pip`.
+- **Two machines now**: Yahya's has Python 3.13.3 (`python` on PATH); the original has 3.14.
+  `requirements.txt` floors are the versions verified on 09-09 — don't lower them, older
+  Streamlit does not know `width="stretch"`.
+- **Screenshots**: Chrome's `--headless --screenshot` captures Streamlit before the
+  websocket delivers the page (blank below the fold). A CDP script with a real 12s wait
+  works; the crops in `docs/screenshots/` came from a 1600×2350 capture.
+- **Tests never touch `data/raw/`** — every corrupted fixture is built in a temp dir.
 - **Determinism** is a feature, not incidental — `SEED=42`, `AS_OF=2026-09-08` in
   `generate_data.py`. The reference "today" used by detection comes from the AWS export's
   `GeneratedAt` field (see `pipeline.reference_date`), so re-runs are reproducible.
