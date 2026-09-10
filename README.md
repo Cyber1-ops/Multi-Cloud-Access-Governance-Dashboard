@@ -16,7 +16,7 @@ every finding.
 
 ## Quick start (one command per step)
 
-Requires Python 3.11+ (dashboard verified on 3.13; logic modules also on 3.14) and no cloud credentials.
+Tested on Python 3.13 (logic modules also on 3.14). No cloud credentials needed.
 
 ```bash
 python -m pip install -r requirements.txt
