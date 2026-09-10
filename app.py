@@ -90,7 +90,8 @@ def score_breakdown_chart(findings) -> alt.Chart:
         "Status": "triggered" if k in got else "not triggered",
     } for k, v in WEIGHTS.items()])
     order = [k.replace("_", " ") for k in WEIGHTS]
-    base = alt.Chart(df).encode(y=alt.Y("Rule", sort=order, title=None))
+    base = alt.Chart(df).encode(y=alt.Y("Rule", sort=order, title=None,
+                                        axis=alt.Axis(labelOverlap=False, labelLimit=160)))
     ghost = base.mark_bar(color="#374151", opacity=0.35).encode(
         x=alt.X("Max", scale=alt.Scale(domain=[0, 40]), title="points added to risk score"))
     bars = base.mark_bar().encode(

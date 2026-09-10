@@ -32,7 +32,7 @@ Logic-only checks that need no third-party packages:
 ```bash
 python -m src.pipeline              # identity resolution stats
 python -m src.detection             # analysis + top 5 by risk
-python -m unittest discover -s tests -v   # determinism + resilience suite (10 tests)
+python -m unittest discover -s tests -v   # 32 tests: normalizer, resilience, dashboard smoke
 ```
 
 ## What the demo shows
@@ -46,15 +46,27 @@ The top three findings are deterministic:
 | 100 | Noah Osman (Operations) | Same pattern: leaver, cross-cloud superuser, toxic combination, idle |
 | 95 | Layla Al Balushi (Security) | Departed, GCP owner, escalation path, idle |
 
-Click any identity in the drill-down panel to see its presence per cloud, the
-native roles it holds, the normalized capabilities, and each finding with its
-evidence and remediation. Filters: cloud, department, severity, free-text
-search, unused-access window (30 to 180 days), flagged-only.
+Click any identity in the drill-down panel to see:
+
+- **Score breakdown**: every rule with the points it added and its maximum,
+  plus the additive sum and the cap. The score is never a black box.
+- **Capability matrix**: a service x cloud grid of the highest normalized
+  level (read / write / admin), colour-coded, with the escalation capabilities
+  held in each cloud. This is the normalizer made visible: AWS
+  AdministratorAccess, Azure Owner and GCP roles/owner all look identical here.
+- Cloud presence with the native roles behind each cell, and each finding
+  with its evidence, weight and remediation.
+
+Filters: cloud, department, severity, free-text search, unused-access window
+(30 to 180 days), flagged-only.
 
 Exports: findings CSV (one row per identity + finding), identity summary CSV,
 and an executive PDF report.
 
+<img src="docs/screenshots/drilldown_score_matrix.png" alt="Score breakdown and capability matrix" width="480">
 <img src="docs/screenshots/drilldown_top_finding.png" alt="Drill-down for the top finding" width="480">
+
+A five-minute walkthrough for a live demo is in [docs/demo_script.md](docs/demo_script.md).
 
 ## How it works
 
@@ -101,10 +113,25 @@ The score is additive and capped at 100 so every point is traceable to a rule.
 
 Severity bands: 70+ Critical, 40+ High, 20+ Medium, above 0 Low.
 
-### 4. Resilience
+### 4. Tests
 
-"Survives a second run and unexpected input" is a scored criterion, so it is
-tested rather than claimed. `tests/test_resilience.py` covers:
+```bash
+python -m unittest discover -s tests -v
+```
+
+32 tests, stdlib `unittest`, about five seconds:
+
+- `tests/test_normalizer.py` (18): the provider-to-model mappings the rules
+  depend on. Superadmin roles expand to the same wildcard set in all three
+  dialects; the create-role + assign-role combination is detected whether it
+  arrives as an AWS inline policy, an Azure custom role or two GCP roles;
+  reader roles yield reads only; deny statements are ignored; unknown roles
+  yield nothing; unknown mutating actions fall back to write, never to nothing.
+- `tests/test_app_smoke.py` (4): drives the real `app.py` through Streamlit's
+  AppTest: default view, slider, an identity with zero findings, an empty
+  filter. No exceptions allowed.
+- `tests/test_resilience.py` (10): "survives a second run and unexpected
+  input" is a scored criterion, so it is tested rather than claimed:
 
 - generator determinism (two runs are byte-identical and match `data/raw/`)
 - a missing provider export, missing HR directory, missing activity log, empty directory
@@ -127,10 +154,20 @@ src/normalizer.py         AWS / Azure / GCP ➜ CPM mappers
 src/pipeline.py           load, resolve identities across clouds, normalize
 src/detection.py          six rules, additive risk score, evidence + remediation
 src/report.py             CSV and PDF export
-tests/test_resilience.py  determinism + resilience suite (stdlib unittest)
-docs/                     screenshots, working notes
+tests/test_normalizer.py  mapping correctness (18 tests)
+tests/test_resilience.py  determinism + resilience (10 tests)
+tests/test_app_smoke.py   Streamlit AppTest smoke test of app.py (4 tests)
+docs/screenshots/         captures from the verified run
+docs/demo_script.md       five-minute live-demo walkthrough
+docs/submission/          the 5-page jury PDF
 PROGRESS.md               team handoff / state of the project
 ```
+
+## Jury submission
+
+`docs/submission/OPSEC_Multi-Cloud_Access_Governance.pdf`: five landscape
+pages mapped to the required sections and to the rubric, every figure taken
+from the verified runs.
 
 ## Limitations and next steps
 
