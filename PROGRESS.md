@@ -223,9 +223,10 @@ Rule 4.
       pushes that expose my email" → `git push origin main`; or set `git config user.email` to the
       noreply address, `git rebase a1b2200 --exec "git commit --amend --no-edit --reset-author"`,
       then push.
-- [ ] **Repo visibility.** The repo is **private**. The PDF cites the URL; the jury cannot open it
-      unless it is made public (Settings → General → Danger zone → Change visibility) or the
-      organizers are added as collaborators. Decide before upload.
+- [ ] **Repo visibility (friend's action — only Cyber1-ops has admin; o3zx has push only).**
+      The repo is **private**. The PDF cites the URL; the jury cannot open it unless Cyber1-ops
+      makes it public (Settings → General → Danger zone → Change visibility) or adds the
+      organizers as collaborators. Otherwise remove the URL from page 1 before upload.
 - [ ] **Captain uploads the PDF** (`docs/submission/OPSEC_Multi-Cloud_Access_Governance.pdf`)
       before **11 Sept 23:59 GST**.
 - [ ] (If Top 5) rehearse `docs/demo_script.md` once end-to-end; ~5 minutes.
@@ -258,6 +259,9 @@ Rule 4.
 - **Streamlit checkboxes ignore synthetic browser clicks**; use `tests/test_app_smoke.py`
   (AppTest) to drive widgets headlessly instead of the browser pane.
 - **PDF rendering for review**: PyMuPDF (`fitz`) is installed here; `pdftoppm` is not.
+- **`.gitattributes` marks `*.pdf` / `*.png` as binary.** Without it Git treated the submission
+  PDF as text and a Windows checkout (autocrlf) would corrupt it. Verified by cloning and
+  byte-comparing. Don't remove it.
 - **Determinism** is a feature, not incidental — `SEED=42`, `AS_OF=2026-09-08` in
   `generate_data.py`. The reference "today" used by detection comes from the AWS export's
   `GeneratedAt` field (see `pipeline.reference_date`), so re-runs are reproducible.

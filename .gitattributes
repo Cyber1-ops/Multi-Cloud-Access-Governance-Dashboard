@@ -1,0 +1,4 @@
+# Never line-ending-convert binaries (the submission PDF was being treated as text)
+*.pdf binary
+*.png binary
+*.jpg binary
