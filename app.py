@@ -19,6 +19,8 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
+from src.common_model import (CAP_IAM_ADMIN, CAP_IAM_ASSIGN_ROLE, CAP_IAM_CREATE_ROLE,
+                              CAP_WILDCARD, LEVELS, SERVICES)
 from src.detection import DetectionConfig, WEIGHTS, analyze
 from src.pipeline import build_identities
 from src.report import findings_to_csv, findings_to_pdf, summary_csv
@@ -50,6 +52,53 @@ def run_analysis(unused_days: int):
 
 def severity_badge(sev: str) -> str:
     return f":{'red' if sev in ('Critical', 'High') else 'orange' if sev == 'Medium' else 'blue'}[{sev}]"
+
+
+LEVEL_COLORS = {"admin": "#b91c1c", "write": "#c2410c", "read": "#1d4ed8", "none": ""}
+ESCALATION_CAPS = (CAP_WILDCARD, CAP_IAM_ADMIN, CAP_IAM_CREATE_ROLE, CAP_IAM_ASSIGN_ROLE)
+
+
+def capability_matrix(ident) -> pd.DataFrame:
+    """Service x cloud grid of the highest normalized level held in each cloud."""
+    rows = {}
+    for svc in SERVICES:
+        row = {}
+        for prov in ident.providers:
+            caps = ident.clouds[prov].capabilities
+            level = "none"
+            if CAP_WILDCARD in caps:
+                level = "admin"
+            else:
+                for lvl in LEVELS:                      # read < write < admin
+                    if f"{svc}:{lvl}" in caps:
+                        level = lvl
+            row[prov.upper()] = level
+        rows[svc] = row
+    return pd.DataFrame(rows).T
+
+
+def _level_style(v: str) -> str:
+    c = LEVEL_COLORS.get(v, "")
+    return f"background-color: {c}; color: white; font-weight: 600" if c else "color: #6b7280"
+
+
+def score_breakdown_chart(findings) -> alt.Chart:
+    """Additive score made visible: every rule, points added (0 if not triggered)."""
+    got = {f.rule_id: f.weight for f in findings}
+    df = pd.DataFrame([{
+        "Rule": k.replace("_", " "), "Points": got.get(k, 0), "Max": v,
+        "Status": "triggered" if k in got else "not triggered",
+    } for k, v in WEIGHTS.items()])
+    order = [k.replace("_", " ") for k in WEIGHTS]
+    base = alt.Chart(df).encode(y=alt.Y("Rule", sort=order, title=None))
+    ghost = base.mark_bar(color="#374151", opacity=0.35).encode(
+        x=alt.X("Max", scale=alt.Scale(domain=[0, 40]), title="points added to risk score"))
+    bars = base.mark_bar().encode(
+        x="Points",
+        color=alt.Color("Status", scale=alt.Scale(domain=["triggered", "not triggered"],
+                                                  range=["#b91c1c", "#374151"]), legend=None),
+        tooltip=["Rule", "Points", "Max", "Status"])
+    return (ghost + bars).properties(height=190)
 
 
 # ---------------------------------------------------------------------------
@@ -85,7 +134,7 @@ sel_providers = st.sidebar.multiselect("Cloud", all_providers, default=all_provi
 sel_depts = st.sidebar.multiselect("Department", all_depts, default=all_depts)
 sel_sev = st.sidebar.multiselect(
     "Severity", ["Critical", "High", "Medium", "Low", "None"],
-    default=["Critical", "High", "Medium", "Low"])
+    default=["Critical", "High", "Medium", "Low", "None"])
 search = st.sidebar.text_input("Search name / email").strip().lower()
 only_flagged = st.sidebar.checkbox("Only show flagged identities", value=True)
 
@@ -203,9 +252,30 @@ with right:
         st.write(f"**Email:** `{r['email']}`  ·  **HR status:** {r['status']}")
         if r["days_inactive"] is not None:
             st.write(f"**Last activity:** {r['last_activity']} ({r['days_inactive']} days ago)")
-
-        st.markdown("**Cloud presence & normalized capabilities**")
         ident = r["_identity"]
+
+        st.markdown("**Score breakdown** · additive weights, capped at 100")
+        st.altair_chart(score_breakdown_chart(r["findings"]), width="stretch")
+        raw_sum = sum(f.weight for f in r["findings"])
+        if raw_sum:
+            st.caption(" + ".join(str(f.weight) for f in r["findings"]) + f" = {raw_sum}"
+                       + (f" → capped at 100" if raw_sum > 100 else ""))
+        else:
+            st.caption("No rule triggered → 0.")
+
+        st.markdown("**Capability matrix** · highest normalized level per service and cloud")
+        matrix = capability_matrix(ident)
+        st.dataframe(matrix.style.map(_level_style), width="stretch",
+                     height=min(36 + 35 * len(matrix), 330))
+        esc = {prov.upper(): [c for c in ESCALATION_CAPS if c in ident.clouds[prov].capabilities]
+               for prov in ident.providers}
+        if any(esc.values()):
+            st.caption("Escalation capabilities: " + " · ".join(
+                f"{p}: {', '.join(f'`{c}`' for c in cs)}" for p, cs in esc.items() if cs))
+        else:
+            st.caption("No escalation capabilities (wildcard / iam:admin / create-role / assign-role).")
+
+        st.markdown("**Cloud presence & native roles**")
         for prov in ident.providers:
             p = ident.clouds[prov]
             with st.expander(f"{prov.upper()} — {p.principal_type}", expanded=False):
