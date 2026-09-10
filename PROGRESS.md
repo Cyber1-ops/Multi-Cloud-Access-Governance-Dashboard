@@ -2,7 +2,7 @@
 
 > **Read this first.** This file is the single source of truth for the current
 > state of the project. It is written for the next teammate to
-> pick up work with zero prior context. Last updated: **2026-09-10** (Day 3, by Yahya/captain). **Submission PDF built; only names + push + upload remain.**
+> pick up work with zero prior context. Last updated: **2026-09-10** (Day 3, by Yahya/captain). **Everything is pushed to GitHub. Only team names, repo visibility and the upload remain.**
 
 ---
 
@@ -217,12 +217,11 @@ Rule 4.
 
 - [ ] **Fill in team member names** on page 1 of the PDF (names are in Rules.txt on the
       original machine) and re-export it; it must stay exactly 5 pages.
-- [ ] **Push to GitHub.** Local `main` is 10 commits ahead of `origin/main`, which still sits at
-      "Initial project setup". Push is rejected with GH007 (private-email protection on the
-      captain's GitHub account). Fix = github.com/settings/emails → untick "Block command line
-      pushes that expose my email" → `git push origin main`; or set `git config user.email` to the
-      noreply address, `git rebase a1b2200 --exec "git commit --amend --no-edit --reset-author"`,
-      then push.
+- [x] **Pushed to GitHub** (2026-09-10): `origin/main` now has all 11 Day-2/Day-3 commits.
+      Pull before doing anything: `git pull origin main`. Note: the captain's commits were
+      rewritten locally with the GitHub noreply author email before pushing (GitHub's GH007
+      private-email protection rejected the original address); history from `a1b2200` onward
+      is new, so if you had an older local copy, re-clone rather than merge.
 - [ ] **Repo visibility (friend's action — only Cyber1-ops has admin; o3zx has push only).**
       The repo is **private**. The PDF cites the URL; the jury cannot open it unless Cyber1-ops
       makes it public (Settings → General → Danger zone → Change visibility) or adds the
@@ -238,7 +237,7 @@ Rule 4.
 | **Day 1 – 8 Sept (done)** | Data generator → normalizer → detection → risk scoring. ✅ All built & verified on stdlib. Dashboard + export code written. |
 | **Day 2 – 9 Sept (done)** | ✅ Deps installed; app ran & verified in browser; PDF export verified; resilience bug fixed + 10-test suite; screenshots captured; README written; repo hygiene. |
 | **Day 3 – 10 Sept (done)** | ✅ 5-page PDF built + reviewed; drill-down score breakdown + capability matrix; 18 normalizer tests + 4 AppTest smoke tests (32 total); README/demo script; final captures. |
-| **11 Sept** | Fill names → rebuild PDF → push repo (fix GH007) → make repo public → **captain uploads** before 23:59 GST. |
+| **11 Sept** | Fill names → rebuild PDF → commit+push → Cyber1-ops makes repo public → **captain uploads** before 23:59 GST. |
 
 ---
 
@@ -247,6 +246,8 @@ Rule 4.
 - **Run commands from the project root** so `from src....` imports resolve. Modules are
   run as `python -m src.pipeline` / `python -m src.detection` (not by file path).
 - **Windows + PowerShell** environment. Use `python -m pip`, not `pip`.
+- **Git identity on Yahya's machine** is repo-local `o3zx@users.noreply.github.com` (GitHub
+  rejects pushes exposing his private Gmail). Keep it; don't reset to the Gmail address.
 - **Two machines now**: Yahya's has Python 3.13.3 (`python` on PATH); the original has 3.14.
   `requirements.txt` floors are the versions verified on 09-09 — don't lower them, older
   Streamlit does not know `width="stretch"`.
