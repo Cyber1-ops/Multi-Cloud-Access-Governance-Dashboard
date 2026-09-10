@@ -50,9 +50,7 @@ def _hashes(directory: str) -> dict[str, str]:
     for name in sorted(os.listdir(directory)):
         with open(os.path.join(directory, name), "rb") as f:
             # normalise line endings so a Linux/macOS run matches files committed from Windows
-            out[name] = hashlib.sha256(f.read().replace(b"
-", b"
-")).hexdigest()
+            out[name] = hashlib.sha256(f.read().replace(b"\r\n", b"\n")).hexdigest()
     return out
 
 
