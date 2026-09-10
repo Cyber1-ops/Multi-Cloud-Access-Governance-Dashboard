@@ -2,7 +2,7 @@
 
 > **Read this first.** This file is the single source of truth for the current
 > state of the project. It is written for the next teammate to
-> pick up work with zero prior context. Last updated: **2026-09-09** (Day 2, by Yahya/captain).
+> pick up work with zero prior context. Last updated: **2026-09-10** (Day 3, by Yahya/captain). **Submission PDF built; only names + push + upload remain.**
 
 ---
 
@@ -92,7 +92,10 @@ Multi-Cloud-Access-Governance-Dashboard/     (GitHub: Cyber1-ops/Multi-Cloud-Acc
 │     ├─ gcp_iam_policy.json      #   GCP native format (role -> members bindings)
 │     └─ activity_log.csv         #   unified last-activity signal per principal
 ├─ docs/
-│  └─ screenshots/               # dashboard_overview.png, dashboard_full.png, drilldown_top_finding.png [DONE]
+│  ├─ demo_script.md             # 5-minute live-demo walkthrough + Q&A                [DONE]
+│  ├─ submission/
+│  │  └─ OPSEC_Multi-Cloud_Access_Governance.pdf   # THE JURY DELIVERABLE (0.31 MiB)  [names pending]
+│  └─ screenshots/               # overview, full page, charts, drill-down crops       [DONE]
 ├─ src/
 │  ├─ __init__.py
 │  ├─ common_model.py            # Common Permission Model / taxonomy               [DONE]
@@ -100,8 +103,10 @@ Multi-Cloud-Access-Governance-Dashboard/     (GitHub: Cyber1-ops/Multi-Cloud-Acc
 │  ├─ pipeline.py                # load + identity-resolve + normalize (type-hardened 09-09) [DONE + RUN OK]
 │  ├─ detection.py               # 6 detection rules + additive risk scoring        [DONE + RUN OK]
 │  └─ report.py                  # CSV + PDF findings export                        [DONE + RUN OK, PDF verified]
-└─ tests/
-   └─ test_resilience.py         # 10 stdlib unittest cases: determinism + resilience [DONE, all pass]
+└─ tests/                        # 32 tests total, ~5 s, all pass (python -m unittest discover -s tests)
+   ├─ test_normalizer.py         # 18: provider -> CPM mapping correctness            [DONE]
+   ├─ test_resilience.py         # 10: determinism + malformed/missing input          [DONE]
+   └─ test_app_smoke.py          #  4: Streamlit AppTest drives the real app.py       [DONE]
 ```
 (Rules.txt and the invite email live outside the repo on the original machine; the
 key facts from them are in sections 1-2 above.)
@@ -187,51 +192,43 @@ Rule 4.
   `deleted:` GCP members, unknown roles).
 - Streamlit deprecation (`use_container_width` → `width="stretch"`) fixed; server log clean.
 
+### Day 3 (2026-09-10) — submission built, showcase features added, everything re-verified
+- **Submission PDF built**: 5 landscape A4 pages
+  (Title · Objective · Solution · Validation · Results), each header names the rubric line it
+  targets. Exactly 5 pages, well under 20 MiB. Rendered and
+  eyeballed page by page (PyMuPDF). 0.31 MiB. No embedded files/JS.
+- **Drill-down upgrades (display-only, rules/weights/data untouched)**: score-breakdown chart
+  (points per rule, ghost bar = max, caption "40 + 30 + 25 + 20 + 10 = 125 → capped at 100") and
+  capability matrix (service × cloud, highest normalized level, colour-coded, escalation caps
+  listed). Severity filter now defaults to all bands so "only flagged" off actually shows clean
+  identities (found by the smoke test).
+- **Tests: 32/32 pass** — 18 normalizer mapping tests, 10 resilience, 4 Streamlit AppTest cases
+  (default view, slider 150 → flagged 109, zero-finding identity Noura Al Marri renders
+  "No rule triggered" + "No governance findings", empty filter shows the info box).
+- Browser re-verified after the changes: panels render for Huda Qureshi; no console errors,
+  clean server log. Final full-page capture in `docs/screenshots/dashboard_full.png`.
+- Baseline numbers unchanged: 500 / 130 flagged / 7 Critical / same top 5.
+
 ---
 
 ## 6. WHAT IS LEFT TO DO (next steps, in priority order)
 
-**Day 2 checklist is complete** (deps, app run, resilience tests, README, screenshots,
-hygiene). Everything below is Day 3 work: the graded artifact.
+**Everything buildable is built and verified.** What remains needs a human:
 
-### Task list
-1. ~~Build synthetic data generator~~ ✅
-2. ~~Build normalizer~~ ✅
-3. ~~Build detection engine + risk scoring~~ ✅
-4. ~~Build Streamlit dashboard~~ ✅ verified in browser 09-09
-5. ~~Add CSV/PDF export~~ ✅ PDF verified 09-09
-6. ~~Resilience tests~~ ✅ `tests/test_resilience.py`, 10 pass
-7. ~~README~~ ✅ with 3 screenshots in `docs/screenshots/`
-8. **Write the 5-page PDF submission** — NOT STARTED. **This is what the jury grades.**
-9. Prepare the live-demo script (needed only if Top 5, but cheap to draft now).
-
-### Concrete remaining work
-- [ ] **Write the 5-page PDF** (≤5 pages, ≤20 MiB, PDF only). Suggested page plan, mapped 1:1
-      to the required sections and the rubric:
-      1. **Title** — project name, Team OPSEC, members, competition, date.
-      2. **Project objective** — permission drift in gov hybrid estates; who deploys it
-         (cloud security / GRC team); what it replaces (manual quarterly access reviews,
-         siloed per-cloud IAM consoles). *(fit-to-brief 20%)*
-      3. **Proposed solution** — architecture diagram (ingest → normalize to CPM → detect →
-         score → dashboard/export; the ASCII version is in README "How it works"), the 3
-         native formats, the common model, the 6-rule table with weights; position vs.
-         CIEM / Zero-Trust least privilege / NIST 800-53 AC-2, AC-6. *(relevance 15%,
-         innovation 15%: cross-cloud superuser + toxic-combo + explainable additive score)*
-      4. **Solution validation** — README one-command run; determinism; second-machine
-         reproduction; the browser-verified filter walkthrough; the resilience test list
-         (all facts are in section 5 of this file); screenshots `dashboard_overview.png` +
-         `drilldown_top_finding.png`. *(prototype works 25%, technical depth 25%)*
-      5. **Results & conclusions** — 500 identities, 130 flagged, 7 Critical / 31 High /
-         25 Medium / 67 Low; rule breakdown; top-3 walkthrough (Huda Qureshi 100, Noah
-         Osman 100, Layla Al Balushi 95) with evidence; remediation value; limitations &
-         next steps (README "Limitations").
-      - Build it with reportlab (already a dependency) or Slides/Canva export. Put the
-        source under `docs/submission/`; keep the final PDF out of git if >5 MB.
-- [ ] **Captain (Yahya) uploads** before **11 Sept 23:59 GST**. Only the captain can.
-- [ ] (Optional) unit tests for the normalizer mappings (`tests/test_normalizer.py`) —
-      cheap extra evidence for "technical correctness".
-- [ ] (If Top 5) tight 5-minute live-demo script for GISEC 18 Sept: open dashboard →
-      sort by risk → top-3 drill-down → toggle slider → export PDF.
+- [ ] **Fill in team member names** on page 1 of the PDF (names are in Rules.txt on the
+      original machine) and re-export it; it must stay exactly 5 pages.
+- [ ] **Push to GitHub.** Local `main` is 10 commits ahead of `origin/main`, which still sits at
+      "Initial project setup". Push is rejected with GH007 (private-email protection on the
+      captain's GitHub account). Fix = github.com/settings/emails → untick "Block command line
+      pushes that expose my email" → `git push origin main`; or set `git config user.email` to the
+      noreply address, `git rebase a1b2200 --exec "git commit --amend --no-edit --reset-author"`,
+      then push.
+- [ ] **Repo visibility.** The repo is **private**. The PDF cites the URL; the jury cannot open it
+      unless it is made public (Settings → General → Danger zone → Change visibility) or the
+      organizers are added as collaborators. Decide before upload.
+- [ ] **Captain uploads the PDF** (`docs/submission/OPSEC_Multi-Cloud_Access_Governance.pdf`)
+      before **11 Sept 23:59 GST**.
+- [ ] (If Top 5) rehearse `docs/demo_script.md` once end-to-end; ~5 minutes.
 
 ## 7. Schedule (deadline 11 Sept 23:59 GST)
 
@@ -239,8 +236,8 @@ hygiene). Everything below is Day 3 work: the graded artifact.
 |---|---|
 | **Day 1 – 8 Sept (done)** | Data generator → normalizer → detection → risk scoring. ✅ All built & verified on stdlib. Dashboard + export code written. |
 | **Day 2 – 9 Sept (done)** | ✅ Deps installed; app ran & verified in browser; PDF export verified; resilience bug fixed + 10-test suite; screenshots captured; README written; repo hygiene. |
-| **Day 3 – 10 Sept** | Write & design the 5-page PDF mapped 1:1 to the rubric; internal review; buffer. |
-| **11 Sept** | Final polish; **captain uploads the PDF** before 23:59 GST. |
+| **Day 3 – 10 Sept (done)** | ✅ 5-page PDF built + reviewed; drill-down score breakdown + capability matrix; 18 normalizer tests + 4 AppTest smoke tests (32 total); README/demo script; final captures. |
+| **11 Sept** | Fill names → rebuild PDF → push repo (fix GH007) → make repo public → **captain uploads** before 23:59 GST. |
 
 ---
 
@@ -256,6 +253,11 @@ hygiene). Everything below is Day 3 work: the graded artifact.
   websocket delivers the page (blank below the fold). A CDP script with a real 12s wait
   works; the crops in `docs/screenshots/` came from a 1600×2350 capture.
 - **Tests never touch `data/raw/`** — every corrupted fixture is built in a temp dir.
+- **Never edit a number in the PDF by hand** — they mirror section 5 of this file;
+  if the estate or rules change, re-run pipeline/detection and update both.
+- **Streamlit checkboxes ignore synthetic browser clicks**; use `tests/test_app_smoke.py`
+  (AppTest) to drive widgets headlessly instead of the browser pane.
+- **PDF rendering for review**: PyMuPDF (`fitz`) is installed here; `pdftoppm` is not.
 - **Determinism** is a feature, not incidental — `SEED=42`, `AS_OF=2026-09-08` in
   `generate_data.py`. The reference "today" used by detection comes from the AWS export's
   `GeneratedAt` field (see `pipeline.reference_date`), so re-runs are reproducible.
