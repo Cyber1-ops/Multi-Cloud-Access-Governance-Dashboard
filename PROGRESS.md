@@ -2,7 +2,7 @@
 
 > **Read this first.** This file is the single source of truth for the current
 > state of the project. It is written for the next teammate to
-> pick up work with zero prior context. Last updated: **2026-09-10** (Day 3, by Yahya/captain). **Everything is pushed to GitHub. Only team names, repo visibility and the upload remain.**
+> pick up work with zero prior context. Last updated: **2026-09-11** (by Yahya/captain). **Everything is pushed to GitHub. Only repo visibility and the upload remain.**
 
 ---
 
@@ -215,8 +215,8 @@ Rule 4.
 
 **Everything buildable is built and verified.** What remains needs a human:
 
-- [ ] **Fill in team member names** on page 1 of the PDF (names are in Rules.txt on the
-      original machine) and re-export it; it must stay exactly 5 pages.
+- [x] **Team member names filled in** on page 1 of the PDF (Yahya Dehbi, captain; Abdelrahman
+      Ahmad). Rebuilt 2026-09-11, still exactly 5 pages, 0.31 MiB.
 - [x] **Pushed to GitHub** (2026-09-10): `origin/main` now has all 11 Day-2/Day-3 commits.
       Pull before doing anything: `git pull origin main`. Note: the captain's commits were
       rewritten locally with the GitHub noreply author email before pushing (GitHub's GH007
